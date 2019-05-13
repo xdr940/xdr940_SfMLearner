@@ -19,12 +19,13 @@ from tensorboardX import SummaryWriter
 parser = argparse.ArgumentParser(description='Structure from Motion Learner training on KITTI and CityScapes Dataset',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-parser.add_argument('data', metavar='DIR',
-                    help='path to dataset')
+
+parser.add_argument("--data",help='path to original dataset',default='processed_data/')#处理完的训练集要包含sequence 和两个txt文档
+
 parser.add_argument('--dataset-format', default='sequential', metavar='STR',
                     help='dataset format, stacked: stacked frames (from original TensorFlow code) \
-                    sequential: sequential folders (easier to convert to with a non KITTI/Cityscape dataset')
-parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=3)
+                    sequential: sequential folders (easier to convert to with a non KITTI/Cityscape dataset')#训练集形式
+parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=9)#自己加上前一张，后一张，一共三张
 parser.add_argument('--rotation-mode', type=str, choices=['euler', 'quat'], default='euler',
                     help='rotation mode for PoseExpnet : euler (yaw,pitch,roll) or quaternion (last 3 coefficients)')
 parser.add_argument('--padding-mode', type=str, choices=['zeros', 'border'], default='zeros',
@@ -33,13 +34,13 @@ parser.add_argument('--padding-mode', type=str, choices=['zeros', 'border'], def
                          ' border will only null gradients of the coordinate outside (x or y)')
 parser.add_argument('--with-gt', action='store_true', help='use ground truth for validation. \
                     You need to store it in npy 2D arrays see data/kitti_raw_loader.py for an example')
-parser.add_argument('-j', '--workers', default=4, type=int, metavar='N',
+parser.add_argument('-j', '--workers', default=5, type=int, metavar='N',
                     help='number of data loading workers')
 parser.add_argument('--epochs', default=200, type=int, metavar='N',
                     help='number of total epochs to run')
-parser.add_argument('--epoch-size', default=0, type=int, metavar='N',
+parser.add_argument('--epoch-size', default=10, type=int, metavar='N',
                     help='manual epoch size (will match dataset size if not set)')
-parser.add_argument('-b', '--batch-size', default=4, type=int,
+parser.add_argument('-b', '--batch-size', default=7, type=int,
                     metavar='N', help='mini-batch size')
 parser.add_argument('--lr', '--learning-rate', default=2e-4, type=float,
                     metavar='LR', help='initial learning rate')
@@ -63,7 +64,7 @@ parser.add_argument('--log-summary', default='progress_log_summary.csv', metavar
 parser.add_argument('--log-full', default='progress_log_full.csv', metavar='PATH',
                     help='csv where to save per-gradient descent train stats')
 parser.add_argument('-p', '--photo-loss-weight', type=float, help='weight for photometric loss', metavar='W', default=1)
-parser.add_argument('-m', '--mask-loss-weight', type=float, help='weight for explainabilty mask loss', metavar='W', default=0)
+parser.add_argument('-m', '--mask-loss-weight', type=float, help='weight for explainabilty mask loss', metavar='W', default=0.1)#如果权重为0， 训练时经过该网络彻底不计算
 parser.add_argument('-s', '--smooth-loss-weight', type=float, help='weight for disparity smoothness loss', metavar='W', default=0.1)
 parser.add_argument('--log-output', action='store_true', help='will log dispnet outputs and warped imgs at validation step')
 parser.add_argument('-f', '--training-output-freq', type=int, help='frequence for outputting dispnet outputs and warped imgs at training for all scales if 0 will not output',
@@ -131,14 +132,20 @@ def main():
             train=False,
             sequence_length=args.sequence_length,
         )
-    print('{} samples found in {} train scenes'.format(len(train_set), len(train_set.scenes)))
-    print('{} samples found in {} valid scenes'.format(len(val_set), len(val_set.scenes)))
+    print('{} samples found in {} train scenes'.format(len(train_set), len(train_set.scenes)))#训练集都是序列,不用左右
+    print('{} samples found in {} valid scenes'.format(len(val_set), len(val_set.scenes)))#测试集也是序列,不需要左右
     train_loader = torch.utils.data.DataLoader(
-        train_set, batch_size=args.batch_size, shuffle=True,
-        num_workers=args.workers, pin_memory=True)
+        dataset=train_set,
+        batch_size=args.batch_size,
+        shuffle=True,#打乱
+        num_workers=args.workers,#多线程读取数据
+        pin_memory=True)
     val_loader = torch.utils.data.DataLoader(
-        val_set, batch_size=args.batch_size, shuffle=False,
-        num_workers=args.workers, pin_memory=True)
+        dataset=val_set,
+        batch_size=args.batch_size,
+        shuffle=False,#不打乱
+        num_workers=args.workers,
+        pin_memory=True)
 
     if args.epoch_size == 0:
         args.epoch_size = len(train_loader)
@@ -187,6 +194,11 @@ def main():
     with open(args.save_path/args.log_full, 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
         writer.writerow(['train_loss', 'photo_loss', 'explainability_loss', 'smooth_loss'])
+    n_epochs=args.epochs
+    train_size = min(len(train_loader), args.epoch_size)
+    valid_size = len(val_loader)
+    #print(n_epochs,train_size,valid_size)
+    #print(type(n_epochs),type(train_size),type(valid_size))
 
     logger = TermLogger(n_epochs=args.epochs, train_size=min(len(train_loader), args.epoch_size), valid_size=len(val_loader))
     logger.epoch_bar.start()
@@ -201,11 +213,11 @@ def main():
             training_writer.add_scalar(name, error, 0)
         error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names[2:9], errors[2:9]))
         logger.valid_writer.write(' * Avg {}'.format(error_string))
-
+    #main cycle
     for epoch in range(args.epochs):
         logger.epoch_bar.update(epoch)
 
-        # train for one epoch
+        ''' train for one epoch'''
         logger.reset_train_bar()
         train_loss = train(args, train_loader, disp_net, pose_exp_net, optimizer, args.epoch_size, logger, training_writer)
         logger.train_writer.write(' * Avg Loss : {:.3f}'.format(train_loss))
@@ -216,6 +228,7 @@ def main():
             errors, error_names = validate_with_gt(args, val_loader, disp_net, epoch, logger, output_writers)
         else:
             errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger, output_writers)
+
         error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names, errors))
         logger.valid_writer.write(' * Avg {}'.format(error_string))
 
@@ -259,22 +272,24 @@ def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, log
 
     end = time.time()
     logger.train_bar.update(0)
-
     for i, (tgt_img, ref_imgs, intrinsics, intrinsics_inv) in enumerate(train_loader):
+    #for (i, data) in enumerate(train_loader):
         log_losses = i > 0 and n_iter % args.print_freq == 0
         log_output = args.training_output_freq > 0 and n_iter % args.training_output_freq == 0
 
         # measure data loading time
         data_time.update(time.time() - end)
-        tgt_img = tgt_img.to(device)
-        ref_imgs = [img.to(device) for img in ref_imgs]
-        intrinsics = intrinsics.to(device)
-
+        tgt_img = tgt_img.to(device)#(4,3,128,416)
+        ref_imgs = [img.to(device) for img in ref_imgs]#batch size张图片的前一帧和后一帧
+        intrinsics = intrinsics.to(device)#(4,3,3)
+        """forward and loss"""
         # compute output
-        disparities = disp_net(tgt_img)
-        depth = [1/disp for disp in disparities]
-        explainability_mask, pose = pose_exp_net(tgt_img, ref_imgs)
-        
+        disparities = disp_net(tgt_img)# lenth batch-size list of tensor(4,1,128,416) ,(4,1,64,208),(4,1,32,104),(4,1,16,52)]
+
+        explainability_mask, pose = pose_exp_net(tgt_img, ref_imgs)#pose tensor(bs,sq-lenth-1,6), relative camera pose
+        #print(type(explainability_mask))
+        depth = [1 / disp for disp in disparities]#depth = fxT/(d) 成反比关系，简单取倒数
+
         #loss compute
         loss_1, warped, diff = photometric_reconstruction_loss(tgt_img, ref_imgs, intrinsics,
                                                                depth, explainability_mask, pose,
@@ -283,6 +298,7 @@ def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, log
             loss_2 = explainability_loss(explainability_mask)
         else:
             loss_2 = 0
+
         loss_3 = smooth_loss(depth)
 
         loss = w1*loss_1 + w2*loss_2 + w3*loss_3
@@ -342,15 +358,15 @@ def validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger,
     end = time.time()
     logger.valid_bar.update(0)
     for i, (tgt_img, ref_imgs, intrinsics, intrinsics_inv) in enumerate(val_loader):
-        tgt_img = tgt_img.to(device)
-        ref_imgs = [img.to(device) for img in ref_imgs]
+        tgt_img = tgt_img.to(device)#batchsize x 3 x h x w
+        ref_imgs = [img.to(device) for img in ref_imgs]# list
         intrinsics = intrinsics.to(device)
-        intrinsics_inv = intrinsics_inv.to(device)
+        #intrinsics_inv = intrinsics_inv.to(device)
 
         # compute output
         disp = disp_net(tgt_img)
         depth = 1/disp
-        explainability_mask, pose = pose_exp_net(tgt_img, ref_imgs)
+        explainability_mask, pose = pose_exp_net(tgt_img, ref_imgs)#pose: (batch-size, squ-length-a ,6)
 
         loss_1, warped, diff = photometric_reconstruction_loss(tgt_img, ref_imgs,
                                                                intrinsics, depth,

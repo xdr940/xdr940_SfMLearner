@@ -15,7 +15,8 @@ parser = argparse.ArgumentParser(description='Inference script for DispNet learn
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 #parser.add_argument("--output_disp", action='store_true', help="save disparity img",default = 'output/disp/')
 #parser.add_argument("--output_depth", action='store_true', help="save depth img",default = 'output/depth/')
-parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = '/home/roit/others/models/SfMLearner/dispnet_model_best.pth')
+#parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = '/home/roit/others/models/SfMLearner/dispnet_model_best.pth')
+parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = 'checkpoints/dump/dispnet_model_best.pth')
 
 parser.add_argument("--img-height", default=128, type=int, help="Image height")
 parser.add_argument("--img-width", default=416, type=int, help="Image width")

@@ -13,46 +13,52 @@ def photometric_reconstruction_loss(tgt_img, ref_imgs, intrinsics,
         assert(pose.size(1) == len(ref_imgs))
 
         reconstruction_loss = 0
-        b, _, h, w = depth.size()
-        downscale = tgt_img.size(2)/h
+        b, _, h, w = depth.size()#6,1,128,416
+        downscale = tgt_img.size(2)/h#6,3,128,416, 128/128==1
 
-        tgt_img_scaled = F.interpolate(tgt_img, (h, w), mode='area')
-        ref_imgs_scaled = [F.interpolate(ref_img, (h, w), mode='area') for ref_img in ref_imgs]
-        intrinsics_scaled = torch.cat((intrinsics[:, 0:2]/downscale, intrinsics[:, 2:]), dim=1)
-
+        tgt_img_scaled = F.interpolate(tgt_img, (h, w), mode='area')#bs,c,h,w
+        ref_imgs_scaled = [F.interpolate(ref_img, (h, w), mode='area') for ref_img in ref_imgs]#length sq-length-1 list of bs,c,h,w
+        intrinsics_scaled = torch.cat((intrinsics[:, 0:2]/downscale, intrinsics[:, 2:]), dim=1)#6,3,3 to 6, 3, 3
+        #上面三个值完全没变
         warped_imgs = []
         diff_maps = []
 
-        for i, ref_img in enumerate(ref_imgs_scaled):
-            current_pose = pose[:, i]
+        for i, ref_img in enumerate(ref_imgs_scaled):# sq-lenth -1
+            current_pose = pose[:, i]#bs,sq-length -1 ,6
 
-            ref_img_warped, valid_points = inverse_warp(ref_img, depth[:,0], current_pose,
+            #bs,c,h,w
+            ref_img_warped, valid_points = inverse_warp(ref_img, depth[:,0], current_pose,#depth b,c,h,w-->b,h,w, 其他通道不要了
                                                         intrinsics_scaled,
                                                         rotation_mode, padding_mode)
+            #bs,c,h,w
             diff = (tgt_img_scaled - ref_img_warped) * valid_points.unsqueeze(1).float()
 
-            if explainability_mask is not None:
+            if explainability_mask is not None:# lenthg-4 list of (bs,sq-lenth-1,h,w)
                 diff = diff * explainability_mask[:,i:i+1].expand_as(diff)
 
-            reconstruction_loss += diff.abs().mean()
+            # 1.loss add
+            reconstruction_loss += diff.abs().mean()# 0d tensor
             assert((reconstruction_loss == reconstruction_loss).item() == 1)
+            #2.
+            warped_imgs.append(ref_img_warped[0])#bs中取第一个?
 
-            warped_imgs.append(ref_img_warped[0])
+            #
             diff_maps.append(diff[0])
-
+            #       0d tensor;  sq-lenth-1 -lenth list of 3,h,w; sq-lenth-1 -lenth list of 3,h,w
         return reconstruction_loss, warped_imgs, diff_maps
 
     warped_results, diff_results = [], []
-    if type(explainability_mask) not in [tuple, list]:
+
+    if type(explainability_mask) not in [tuple, list]:#这两步是为了将如果输出一种尺寸，也能吻合下面的list操作
         explainability_mask = [explainability_mask]
-    if type(depth) not in [list, tuple]:
+    if type(depth) not in [list, tuple]:#这里的depth list 4 (四个scale)，bs,1,h,w
         depth = [depth]
 
     total_loss = 0
-    for d, mask in zip(depth, explainability_mask):
+    for d, mask in zip(depth, explainability_mask):#四种尺度
         loss, warped, diff = one_scale(d, mask)
-        total_loss += loss
-        warped_results.append(warped)
+        total_loss += loss#0d tensor
+        warped_results.append(warped)#warped: sq-lenth-1-lenth list of (3,h*,w*)
         diff_results.append(diff)
     return total_loss, warped_results, diff_results
 
@@ -68,7 +74,7 @@ def explainability_loss(mask):
 
 
 def smooth_loss(pred_map):
-    def gradient(pred):
+    def gradient(pred):#前面两个维度应该是图片数量(batch_size)和通道
         D_dy = pred[:, :, 1:] - pred[:, :, :-1]
         D_dx = pred[:, :, :, 1:] - pred[:, :, :, :-1]
         return D_dx, D_dy
@@ -88,7 +94,7 @@ def smooth_loss(pred_map):
     return loss
 
 
-@torch.no_grad()
+@torch.no_grad()#这个函数内定义的变量都不求导
 def compute_errors(gt, pred, crop=True):
     abs_diff, abs_rel, sq_rel, a1, a2, a3 = 0,0,0,0,0,0
     batch_size = gt.size(0)

@@ -1,3 +1,7 @@
+#专门对数据预处理， 下采样等操作
+
+
+
 import argparse
 import scipy.misc
 import numpy as np
@@ -7,8 +11,7 @@ from tqdm import tqdm
 from path import Path
 
 parser = argparse.ArgumentParser()
-parser.add_argument("dataset_dir", metavar='DIR',
-                    help='path to original dataset')
+parser.add_argument("--dataset_dir",help='path to original dataset',default='/home/roit/others/datasets/KITTI/raw_data/')
 parser.add_argument("--dataset-format", type=str, default='kitti', choices=["kitti", "cityscapes"])
 parser.add_argument("--static-frames", default=None,
                     help="list of imgs to discard for being static, if not set will discard them based on speed \
@@ -19,7 +22,7 @@ parser.add_argument("--with-pose", action='store_true',
                     help="If available (e.g. with KITTI), will store pose ground truth along with images, for validation")
 parser.add_argument("--no-train-gt", action='store_true',
                     help="If selected, will delete ground truth depth to save space")
-parser.add_argument("--dump-root", type=str, default='dump', help="Where to dump the data")
+parser.add_argument("--dump-root", type=str, default='../processed_data', help="Where to dump the data")#处理后数据
 parser.add_argument("--height", type=int, default=128, help="image height")
 parser.add_argument("--width", type=int, default=416, help="image width")
 parser.add_argument("--depth-size-ratio", type=int, default=1, help="will divide depth size by that ratio")

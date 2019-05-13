@@ -23,8 +23,8 @@ def check_sizes(input, input_name, expected):
     assert(all(condition)), "wrong size for {}, expected {}, got  {}".format(input_name, 'x'.join(expected), list(input.size()))
 
 
-def pixel2cam(depth, intrinsics_inv):
-    global pixel_coords
+def pixel2cam(depth, intrinsics_inv):#像素坐标2相机坐标
+    global pixel_coords#1,3,128,416
     """Transform coordinates in the pixel frame to the camera frame.
     Args:
         depth: depth maps -- [B, H, W]
@@ -34,10 +34,14 @@ def pixel2cam(depth, intrinsics_inv):
     """
     b, h, w = depth.size()
     if (pixel_coords is None) or pixel_coords.size(2) < h:
-        set_id_grid(depth)
+        set_id_grid(depth)#make pixel_coords
     current_pixel_coords = pixel_coords[:,:,:h,:w].expand(b,3,h,w).reshape(b, 3, -1)  # [B, 3, H*W]
-    cam_coords = (intrinsics_inv @ current_pixel_coords).reshape(b, 3, h, w)
-    return cam_coords * depth.unsqueeze(1)
+    TMP=intrinsics_inv @ current_pixel_coords
+    #[B,3,3]@[B,3,H*W]=[B,3,H*W]#大概乘法逻辑懂了，但是原理逻辑不太懂
+    #@符号是矩阵想成，要求两个tensor order一样，并且后两介满足惩罚要求，并且除了后两阶其余维度完全一致
+    cam_coords = (TMP).reshape(b, 3, h, w)
+    #cam_coords:B,3,128,416
+    return cam_coords * depth.unsqueeze(1)#[B,3,H,W]X[B,1,H,W]=[B,3,H,W]
 
 
 def cam2pixel(cam_coords, proj_c2p_rot, proj_c2p_tr, padding_mode):
@@ -157,7 +161,7 @@ def inverse_warp(img, depth, pose, intrinsics, rotation_mode='euler', padding_mo
     Inverse warp a source image to the target image plane.
 
     Args:
-        img: the source image (where to sample pixels) -- [B, 3, H, W]
+        img: the source image (where to sample pixels) -- [B, 3, H, W]#B: batch-size; 3:channels;H:height;W:width
         depth: depth map of the target image -- [B, H, W]
         pose: 6DoF pose parameters from target to source -- [B, 6]
         intrinsics: camera intrinsic matrix -- [B, 3, 3]
@@ -172,7 +176,7 @@ def inverse_warp(img, depth, pose, intrinsics, rotation_mode='euler', padding_mo
 
     batch_size, _, img_height, img_width = img.size()
 
-    cam_coords = pixel2cam(depth, intrinsics.inverse())  # [B,3,H,W]
+    cam_coords = pixel2cam(depth, intrinsics.inverse())  # [B,3,H,W]2
 
     pose_mat = pose_vec2mat(pose, rotation_mode)  # [B,3,4]
 

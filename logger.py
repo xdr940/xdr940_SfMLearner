@@ -14,9 +14,10 @@ class TermLogger(object):
         tr = 3  # train bar position
         ts = 6  # valid bar position
         h = self.t.height
-
+        h=20
         for i in range(10):
             print('')
+        #print(h,s,e,tr)
         self.epoch_bar = progressbar.ProgressBar(max_value=n_epochs, fd=Writer(self.t, (0, h-s+e)))
 
         self.train_writer = Writer(self.t, (0, h-s+tr))

@@ -102,14 +102,16 @@ class KittiRawLoader(object):
             static_frames_file = Path(static_frames_file)
             self.collect_static_frames(static_frames_file)
 
-        with open(test_scene_file, 'r') as f:
+        with open(test_scene_file, 'r') as f:#file 里面注册的是test用的场景, 不在里面的才用在train
             test_scenes = f.readlines()
         self.test_scenes = [t[:-1] for t in test_scenes]
         self.dataset_dir = Path(dataset_dir)
         self.img_height = img_height
         self.img_width = img_width
         self.cam_ids = ['02', '03']
-        self.date_list = ['2011_09_26', '2011_09_28', '2011_09_29', '2011_09_30', '2011_10_03']
+        #self.date_list = ['2011_09_26', '2011_09_28', '2011_09_29', '2011_09_30', '2011_10_03']
+        self.date_list = ['2011_09_26']
+
         self.min_speed = min_speed
         self.get_depth = get_depth
         self.get_pose = get_pose

@@ -19,14 +19,15 @@ def upconv(in_planes, out_planes):
 
 
 class PoseExpNet(nn.Module):
-
+                        #sql-1
     def __init__(self, nb_ref_imgs=2, output_exp=False):
         super(PoseExpNet, self).__init__()
         self.nb_ref_imgs = nb_ref_imgs
         self.output_exp = output_exp
-
+                      # 0   1   2   3   4   5       6
         conv_planes = [16, 32, 64, 128, 256, 256, 256]
         self.conv1 = conv(3*(1+self.nb_ref_imgs), conv_planes[0], kernel_size=7)
+
         self.conv2 = conv(conv_planes[0], conv_planes[1], kernel_size=5)
         self.conv3 = conv(conv_planes[1], conv_planes[2])
         self.conv4 = conv(conv_planes[2], conv_planes[3])
@@ -35,8 +36,8 @@ class PoseExpNet(nn.Module):
         self.conv7 = conv(conv_planes[5], conv_planes[6])
 
         self.pose_pred = nn.Conv2d(conv_planes[6], 6*self.nb_ref_imgs, kernel_size=1, padding=0)
-
-        if self.output_exp:
+        #6,输出3个欧拉角和3d仿射参数参数，一共六个值
+        if self.output_exp: #  0    1   2   3   4
             upconv_planes = [256, 128, 64, 32, 16]
             self.upconv5 = upconv(conv_planes[4],   upconv_planes[0])
             self.upconv4 = upconv(upconv_planes[0], upconv_planes[1])
@@ -60,19 +61,21 @@ class PoseExpNet(nn.Module):
         assert(len(ref_imgs) == self.nb_ref_imgs)
         input = [target_image]
         input.extend(ref_imgs)
-        input = torch.cat(input, 1)
-        out_conv1 = self.conv1(input)
-        out_conv2 = self.conv2(out_conv1)
-        out_conv3 = self.conv3(out_conv2)
-        out_conv4 = self.conv4(out_conv3)
-        out_conv5 = self.conv5(out_conv4)
-        out_conv6 = self.conv6(out_conv5)
-        out_conv7 = self.conv7(out_conv6)
+        input = torch.cat(input, 1)#bs,(sql-1)x3,h,w :(7,33,128,416) (7,27,128,416)
+        out_conv1 = self.conv1(input)#bs,32,h/2,w/2 :(7,16,64,208)
+        out_conv2 = self.conv2(out_conv1)#7,32,32,104
+        out_conv3 = self.conv3(out_conv2)#7,64,16,52
+        out_conv4 = self.conv4(out_conv3)#7,128,8,26
+        out_conv5 = self.conv5(out_conv4)#7,256,4,13
 
-        pose = self.pose_pred(out_conv7)
-        pose = pose.mean(3).mean(2)
-        pose = 0.01 * pose.view(pose.size(0), self.nb_ref_imgs, 6)
-
+        out_conv6 = self.conv6(out_conv5)#7,256,2,7
+        out_conv7 = self.conv7(out_conv6)#7,256,1,4
+                                        #sql = 11    dql = 9
+        pose = self.pose_pred(out_conv7)#(7,60,1,4),(7,48,1,4)
+        pose = pose.mean(3).mean(2)#(bs,6*(sql-1)),(7,48)
+        pose = 0.01 * pose.view(pose.size(0), self.nb_ref_imgs, 6)#7,8,6
+        #Returns a new tensor with the same data as the self tensor but of a different shape.按照顺序拍，没任何规则。这里因为深度
+        #网络的性质，根本用不着对应着来，优化的权重会自动的将3 ordth优化成6个变换参数
         if self.output_exp:
             out_upconv5 = self.upconv5(out_conv5  )[:, :, 0:out_conv4.size(2), 0:out_conv4.size(3)]
             out_upconv4 = self.upconv4(out_upconv5)[:, :, 0:out_conv3.size(2), 0:out_conv3.size(3)]
@@ -91,6 +94,6 @@ class PoseExpNet(nn.Module):
             exp_mask1 = None
 
         if self.training:
-            return [exp_mask1, exp_mask2, exp_mask3, exp_mask4], pose
+            return [exp_mask1, exp_mask2, exp_mask3, exp_mask4], pose#mask:四中尺寸组成的list pose:bs,sq-lenth-1,6
         else:
             return exp_mask1, pose
