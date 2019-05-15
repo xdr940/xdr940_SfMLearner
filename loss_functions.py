@@ -3,7 +3,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 from inverse_warp import inverse_warp
-
+import matplotlib.pyplot as plt
 
 def photometric_reconstruction_loss(tgt_img, ref_imgs, intrinsics,
                                     depth, explainability_mask, pose,
@@ -23,15 +23,18 @@ def photometric_reconstruction_loss(tgt_img, ref_imgs, intrinsics,
         warped_imgs = []
         diff_maps = []
 
-        for i, ref_img in enumerate(ref_imgs_scaled):# sq-lenth -1
+        for i, ref_img in enumerate(ref_imgs_scaled):# sq-lenth -1,i 从所有refs 里面遍历
             current_pose = pose[:, i]#bs,sq-length -1 ,6
 
             #bs,c,h,w
             ref_img_warped, valid_points = inverse_warp(ref_img, depth[:,0], current_pose,#depth b,c,h,w-->b,h,w, 其他通道不要了
                                                         intrinsics_scaled,
                                                         rotation_mode, padding_mode)
+
+            #plt.imsave('a.png',ref_img_warped[0,0,:,:].cpu().data.numpy())# 与ref-img高度重合
             #bs,c,h,w
             diff = (tgt_img_scaled - ref_img_warped) * valid_points.unsqueeze(1).float()
+           # plt.imsave(str(i)+'a.png',diff[0,0,:,:].cpu().data.numpy())# 与ref-img高度重合
 
             if explainability_mask is not None:# lenthg-4 list of (bs,sq-lenth-1,h,w)
                 diff = diff * explainability_mask[:,i:i+1].expand_as(diff)

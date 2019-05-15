@@ -6,8 +6,7 @@ from scipy.misc import imresize
 
 '''Set of tranform random routines that takes list of inputs as arguments,
 in order to have random but coherent transformations.'''
-
-
+# 一个类实例也可以变成一个可调用对象，只需要实现一个方法__call__()
 class Compose(object):
     def __init__(self, transforms):
         self.transforms = transforms

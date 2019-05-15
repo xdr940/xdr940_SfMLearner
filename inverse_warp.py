@@ -24,7 +24,7 @@ def check_sizes(input, input_name, expected):
 
 
 def pixel2cam(depth, intrinsics_inv):#像素坐标2相机坐标
-    global pixel_coords#1,3,128,416
+    global pixel_coords#1,3,128,416 loss func 在外层正对每个ref-img遍历呢
     """Transform coordinates in the pixel frame to the camera frame.
     Args:
         depth: depth maps -- [B, H, W]
@@ -35,7 +35,10 @@ def pixel2cam(depth, intrinsics_inv):#像素坐标2相机坐标
     b, h, w = depth.size()
     if (pixel_coords is None) or pixel_coords.size(2) < h:
         set_id_grid(depth)#make pixel_coords
-    current_pixel_coords = pixel_coords[:,:,:h,:w].expand(b,3,h,w).reshape(b, 3, -1)  # [B, 3, H*W]
+    #tmp1=pixel_coords[:,:,:h,:w]
+    #tmp2=tmp1.expand(b,3,h,w)
+    #tmp3=tmp2.reshape(b, 3, -1)#[]
+    current_pixel_coords = pixel_coords[:,:,:h,:w].expand(b,3,h,w).reshape(b, 3, -1)# [B, 3, H*W]
     TMP=intrinsics_inv @ current_pixel_coords
     #[B,3,3]@[B,3,H*W]=[B,3,H*W]#大概乘法逻辑懂了，但是原理逻辑不太懂
     #@符号是矩阵想成，要求两个tensor order一样，并且后两介满足惩罚要求，并且除了后两阶其余维度完全一致
@@ -152,13 +155,13 @@ def pose_vec2mat(vec, rotation_mode='euler'):
         rot_mat = euler2mat(rot)  # [B, 3, 3]
     elif rotation_mode == 'quat':
         rot_mat = quat2mat(rot)  # [B, 3, 3]
-    transform_mat = torch.cat([rot_mat, translation], dim=2)  # [B, 3, 4]
+    transform_mat = torch.cat([rot_mat, translation], dim=2)  # [B, 3, 4]#没齐次化，少了最后一行0001
     return transform_mat
 
 
 def inverse_warp(img, depth, pose, intrinsics, rotation_mode='euler', padding_mode='zeros'):
     """
-    Inverse warp a source image to the target image plane.
+    Inverse warp a source image to the target image plane.# article [8]
 
     Args:
         img: the source image (where to sample pixels) -- [B, 3, H, W]#B: batch-size; 3:channels;H:height;W:width

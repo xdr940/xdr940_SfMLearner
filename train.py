@@ -15,7 +15,7 @@ from inverse_warp import inverse_warp
 from loss_functions import photometric_reconstruction_loss, explainability_loss, smooth_loss, compute_errors
 from logger import TermLogger, AverageMeter
 from tensorboardX import SummaryWriter
-
+import matplotlib.pyplot as plt
 parser = argparse.ArgumentParser(description='Structure from Motion Learner training on KITTI and CityScapes Dataset',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
@@ -105,13 +105,13 @@ def main():
         custom_transforms.ArrayToTensor(),
         normalize
     ])
-
+    '''transform'''
     valid_transform = custom_transforms.Compose([custom_transforms.ArrayToTensor(), normalize])
 
     print("=> fetching scenes in '{}'".format(args.data))
     train_set = SequenceFolder(
-        args.data,
-        transform=train_transform,
+        args.data,#processed_data_train_sets
+        transform=train_transform,#把几种变换函数输入进去
         seed=args.seed,
         train=True,
         sequence_length=args.sequence_length
@@ -134,8 +134,8 @@ def main():
         )
     print('{} samples found in {} train scenes'.format(len(train_set), len(train_set.scenes)))#训练集都是序列,不用左右
     print('{} samples found in {} valid scenes'.format(len(val_set), len(val_set.scenes)))#测试集也是序列,不需要左右
-    train_loader = torch.utils.data.DataLoader(
-        dataset=train_set,
+    train_loader = torch.utils.data.DataLoader(#data(list): [tensor(B,3,H,W),list(B),(B,H,W),(b,h,w)]
+        dataset=train_set,#sequenceFolder
         batch_size=args.batch_size,
         shuffle=True,#打乱
         num_workers=args.workers,#多线程读取数据
@@ -213,7 +213,7 @@ def main():
             training_writer.add_scalar(name, error, 0)
         error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names[2:9], errors[2:9]))
         logger.valid_writer.write(' * Avg {}'.format(error_string))
-    #main cycle
+    """main cycle"""
     for epoch in range(args.epochs):
         logger.epoch_bar.update(epoch)
 
@@ -273,7 +273,7 @@ def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, log
     end = time.time()
     logger.train_bar.update(0)
     for i, (tgt_img, ref_imgs, intrinsics, intrinsics_inv) in enumerate(train_loader):
-    #for (i, data) in enumerate(train_loader):
+    #for (i, data) in enumerate(train_loader):#data(list): [tensor(B,3,H,W),list(B),(B,H,W),(b,h,w)]
         log_losses = i > 0 and n_iter % args.print_freq == 0
         log_output = args.training_output_freq > 0 and n_iter % args.training_output_freq == 0
 

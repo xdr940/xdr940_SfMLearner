@@ -139,9 +139,9 @@ class KittiRawLoader(object):
                 if dr.name[:-5] not in self.test_scenes:
                     self.scenes.append(dr)
 
-    def collect_scenes(self, drive):
+    def collect_scenes(self, drive):#从一个场景文件夹下面得到左右摄像机组成的list
         train_scenes = []
-        for c in self.cam_ids:
+        for c in self.cam_ids:# 左右相机
             oxts = sorted((drive/'oxts'/'data').files('*.txt'))
             scene_data = {'cid': c, 'dir': drive, 'speed': [], 'frame_id': [], 'pose':[], 'rel_path': drive.name + '_' + c}
             scale = None
@@ -176,7 +176,8 @@ class KittiRawLoader(object):
             sample = self.load_image(scene_data, 0)
             if sample is None:
                 return []
-            scene_data['P_rect'] = self.get_P_rect(scene_data, sample[1], sample[2])
+            """P_rect, intrinsics加入,length从6变到8"""          #zoomx zoomy
+            scene_data['P_rect'] = self.get_P_rect(scene_data, sample[1], sample[2])#R_retct(3,4)
             scene_data['intrinsics'] = scene_data['P_rect'][:,:3]
 
             train_scenes.append(scene_data)
@@ -221,7 +222,7 @@ class KittiRawLoader(object):
         if not img_file.isfile():
             return None
         img = scipy.misc.imread(img_file)
-        zoom_y = self.img_height/img.shape[0]
+        zoom_y = self.img_height/img.shape[0]# (375,1242)->（128,416）纵寬放缩比例
         zoom_x = self.img_width/img.shape[1]
         img = scipy.misc.imresize(img, (self.img_height, self.img_width))
         return img, zoom_x, zoom_y

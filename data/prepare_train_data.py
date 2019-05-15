@@ -11,7 +11,7 @@ from tqdm import tqdm
 from path import Path
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--dataset_dir",help='path to original dataset',default='/home/roit/others/datasets/KITTI/raw_data/')
+parser.add_argument("--dataset_dir",help='path to original dataset',default='/home/roit/datasets/KITTI/raw_data/')
 parser.add_argument("--dataset-format", type=str, default='kitti', choices=["kitti", "cityscapes"])
 parser.add_argument("--static-frames", default=None,
                     help="list of imgs to discard for being static, if not set will discard them based on speed \
@@ -26,13 +26,13 @@ parser.add_argument("--dump-root", type=str, default='../processed_data', help="
 parser.add_argument("--height", type=int, default=128, help="image height")
 parser.add_argument("--width", type=int, default=416, help="image width")
 parser.add_argument("--depth-size-ratio", type=int, default=1, help="will divide depth size by that ratio")
-parser.add_argument("--num-threads", type=int, default=4, help="number of threads to use")
+parser.add_argument("--num-threads", type=int, default=1, help="number of threads to use")#调试方便
 
 args = parser.parse_args()
 
 
-def dump_example(args, scene):
-    scene_list = data_loader.collect_scenes(scene)
+def dump_example(args, scene):#scene:Path /home/roit/datasets/KITTI/raw_data/2011_09_26/2011_09_26_drive_0014_sync
+    scene_list = data_loader.collect_scenes(scene)#2-lenth-list, 左右相机02,03
     for scene_data in scene_list:
         dump_dir = args.dump_root/scene_data['rel_path']
         dump_dir.makedirs_p()
@@ -86,7 +86,8 @@ def main():
     print('Found {} potential scenes'.format(n_scenes))
     print('Retrieving frames')
     if args.num_threads == 1:
-        for scene in tqdm(data_loader.scenes):
+        for scene in tqdm(data_loader.scenes):#遍历所有scenes
+            ''' 读取'''
             dump_example(args, scene)
     else:
         with ProcessPool(max_workers=args.num_threads) as pool:
@@ -120,3 +121,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
