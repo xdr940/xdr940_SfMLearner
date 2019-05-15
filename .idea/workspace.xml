@@ -10,1134 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b690094-0e1d-4425-a161-95753da2ebe2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_transforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_transforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000060.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000065.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000070.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000071.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000075.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000076.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000085.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000086.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000087.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000095.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000097.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000099.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/0000000107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_02/cam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000060.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000065.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000070.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000071.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000075.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000076.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000085.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000086.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000087.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000095.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000097.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000099.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/0000000107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0001_sync_03/cam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000060.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000065.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000070.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000071.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000075.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000076.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000085.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000086.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000087.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000095.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000097.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000099.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000113.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000114.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000124.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/0000000201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_02/cam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000060.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000065.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000070.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000071.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000075.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000076.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000085.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000086.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000087.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000095.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000097.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000099.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000113.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000114.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000124.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/0000000201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0011_sync_03/cam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000060.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000065.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000070.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000071.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000075.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000076.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000085.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000086.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000087.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000095.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000097.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000099.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000113.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000114.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000119.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000121.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000124.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000125.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000127.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000129.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000131.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000132.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000137.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000138.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000141.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000144.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000148.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000151.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000152.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000154.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000155.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000156.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000157.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000159.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000161.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000162.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000163.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000164.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000166.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000167.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000168.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000171.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000172.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000173.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000174.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000175.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000176.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000177.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000178.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000179.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000181.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000182.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000183.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000184.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000185.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000186.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000187.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000188.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000189.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000190.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000192.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000194.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000195.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000196.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000197.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000198.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000199.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000202.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000203.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000204.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000207.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000208.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000211.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000212.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000213.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000214.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000215.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000216.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000217.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000218.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000219.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000221.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000223.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000224.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000225.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000226.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000227.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000228.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000229.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000231.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000232.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000233.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000235.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000236.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000237.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000241.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000242.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000243.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000244.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000245.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000246.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000247.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000248.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000249.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000251.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000252.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000253.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000254.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000255.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000256.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000257.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000258.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000259.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000261.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000262.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000263.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000264.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000265.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000266.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000267.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000268.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000269.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000270.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000271.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000272.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000273.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000274.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000275.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000276.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000277.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000278.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000279.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000281.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000282.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000283.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000284.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000285.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000286.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000287.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000289.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000290.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000291.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000292.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000293.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000294.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000295.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000296.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000297.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000298.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000301.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000302.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000303.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000304.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000305.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000306.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000307.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000308.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000309.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000310.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000311.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000312.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/0000000313.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_02/cam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000019.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000020.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000026.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000030.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000032.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000033.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000034.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000036.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000054.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000059.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000060.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000064.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000065.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000066.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000068.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000070.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000071.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000072.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000074.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000075.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000076.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000083.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000084.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000085.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000086.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000087.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000095.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000096.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000097.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000098.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000099.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000113.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000114.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000119.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000121.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000124.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000125.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000127.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000129.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000131.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000132.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000137.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000138.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000141.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000144.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000148.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000151.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000152.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000154.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000155.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000156.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000157.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000159.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000161.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000162.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000163.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000164.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000166.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000167.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000168.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000171.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000172.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000173.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000174.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000175.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000176.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000177.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000178.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000179.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000181.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000182.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000183.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000184.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000185.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000186.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000187.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000188.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000189.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000190.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000192.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000194.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000195.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000196.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000197.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000198.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000199.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000202.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000203.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000204.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000207.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000208.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000211.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000212.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000213.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000214.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000215.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000216.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000217.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000218.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000219.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000221.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000223.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000224.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000225.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000226.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000227.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000228.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000229.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000231.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000232.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000233.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000235.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000236.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000237.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000241.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000242.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000243.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000244.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000245.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000246.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000247.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000248.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000249.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000251.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000252.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000253.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000254.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000255.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000256.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000257.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000258.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000259.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000261.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000262.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000263.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000264.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000265.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000266.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000267.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000268.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000269.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000270.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000271.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000272.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000273.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000274.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000275.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000276.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000277.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000278.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000279.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000281.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000282.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000283.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000284.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000285.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000286.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000287.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000289.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000290.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000291.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000292.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000293.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000294.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000295.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000296.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000297.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000298.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000301.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000302.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000303.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000304.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000305.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000306.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000307.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000308.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000309.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000310.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000311.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000312.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/0000000313.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/2011_09_26_drive_0014_sync_03/cam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dump/val.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/kitti_raw_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/kitti_raw_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/prepare_train_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/prepare_train_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/sequence_folders.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/sequence_folders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inverse_warp.py" beforeDir="false" afterPath="$PROJECT_DIR$/inverse_warp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loss_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1153,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loss_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="352">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -1162,16 +36,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inverse_warp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="451">
+              <caret line="231" column="2" selection-start-line="231" selection-start-column="2" selection-end-line="231" selection-end-column="2" />
               <folding>
-                <element signature="e#128#477#0" />
+                <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#530#831#0" />
-                <element signature="e#886#1804#0" />
-                <element signature="e#1879#2927#0" />
+                <element signature="e#886#2250#0" />
                 <element signature="e#2956#4072#0" />
                 <element signature="e#4099#4998#0" />
               </folding>
@@ -1182,10 +55,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="370" selection-start-line="370" selection-end-line="370" />
+            <state relative-caret-position="437">
+              <caret line="475" selection-start-line="475" selection-end-line="475" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#16202#19784#0" />
               </folding>
             </state>
           </provider>
@@ -1194,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_transforms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="390">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -1209,11 +83,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+            <state relative-caret-position="148">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="597">
+              <caret line="449" selection-start-line="449" selection-end-line="449" />
             </state>
           </provider>
         </entry>
@@ -1231,43 +114,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#21#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="224" column="74" selection-start-line="224" selection-start-column="74" selection-end-line="224" selection-end-column="74" />
+            <state relative-caret-position="-347">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#333#504#0" />
                 <element signature="e#524#695#0" />
-                <element signature="e#747#1436#0" />
                 <element signature="e#1470#2082#0" />
-                <element signature="e#2125#2300#0" />
+                <element signature="e#2337#11785#0" />
                 <element signature="e#3675#4124#0" />
                 <element signature="e#4171#4411#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_disp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#4483#6393#0" />
+                <element signature="e#6445#7537#0" />
+                <element signature="e#7603#7875#0" />
+                <element signature="e#7984#8395#0" />
               </folding>
             </state>
           </provider>
@@ -1277,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data</find>
       <find>poten</find>
       <find>none</find>
       <find>save_pa</find>
@@ -1306,6 +166,7 @@
       <find>get_P_rect</find>
       <find>collect_scenes</find>
       <find>SequenceFolder</find>
+      <find>roty</find>
       <find>args.data</find>
     </findStrings>
   </component>
@@ -1323,13 +184,13 @@
         <option value="$PROJECT_DIR$/run_inference.py" />
         <option value="$PROJECT_DIR$/logger.py" />
         <option value="$PROJECT_DIR$/models/PoseExpNet.py" />
-        <option value="$PROJECT_DIR$/inverse_warp.py" />
         <option value="$PROJECT_DIR$/custom_transforms.py" />
         <option value="$PROJECT_DIR$/datasets/sequence_folders.py" />
         <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/loss_functions.py" />
         <option value="$PROJECT_DIR$/data/prepare_train_data.py" />
         <option value="$PROJECT_DIR$/data/kitti_raw_loader.py" />
+        <option value="$PROJECT_DIR$/inverse_warp.py" />
       </list>
     </option>
   </component>
@@ -1390,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prepare_train_data">
+  <component name="RunManager" selected="Python.train">
     <configuration name="prepare_train_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SfMLearner_pt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1456,8 +317,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.prepare_train_data" />
         <item itemvalue="Python.train" />
+        <item itemvalue="Python.prepare_train_data" />
         <item itemvalue="Python.run_inference" />
       </list>
     </recent_temporary>
@@ -1488,9 +349,9 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49525616" visible="true" weight="0.16351862" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" weight="0.16351862" />
       <window_info id="Structure" order="1" sideWeight="0.50402576" side_tool="true" weight="0.16557378" />
-      <window_info id="Favorites" order="2" sideWeight="0.5047438" side_tool="true" visible="true" weight="0.16351862" />
+      <window_info id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" visible="true" weight="0.16351862" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989071" weight="0.21812434" />
@@ -1501,26 +362,26 @@
       <window_info anchor="bottom" x="73" y="405" width="1840" height="305" id="Terminal" order="7" sideWeight="0.49562842" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010929" side_tool="true" weight="0.22354212" />
       <window_info anchor="bottom" x="78" y="415" width="1830" height="275" id="Python Console" order="9" sideWeight="0.3601093" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" visible="true" weight="0.4446786" />
+      <window_info active="true" anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" visible="true" weight="0.30769232" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49597424" visible="true" weight="0.16557378" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" visible="true" weight="0.16351862" />
       <window_info id="Structure" order="1" sideWeight="0.50402576" side_tool="true" weight="0.16557378" />
-      <window_info id="Favorites" order="2" sideWeight="0.50402576" side_tool="true" visible="true" weight="0.16557378" />
+      <window_info active="true" id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" visible="true" weight="0.16351862" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22354212" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989071" weight="0.21812434" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.12404372" visible="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4989071" weight="0.32937366" />
-      <window_info anchor="bottom" x="73" y="405" width="1840" height="305" id="Terminal" order="7" sideWeight="0.4989071" weight="0.32937366" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4978142" weight="0.32937366" />
-      <window_info anchor="bottom" x="73" y="422" width="1840" height="271" id="Debug" order="10" sideWeight="0.8759563" side_tool="true" weight="0.32937366" />
+      <window_info anchor="bottom" x="78" y="400" width="1830" height="305" id="TODO" order="5" sideWeight="0.15027322" weight="0.32937366" />
+      <window_info anchor="bottom" x="78" y="400" width="1830" height="305" id="Version Control" order="6" sideWeight="0.49562842" weight="0.32937366" />
+      <window_info anchor="bottom" x="73" y="405" width="1840" height="305" id="Terminal" order="7" sideWeight="0.49562842" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010929" side_tool="true" weight="0.22354212" />
+      <window_info anchor="bottom" x="78" y="415" width="1830" height="275" id="Python Console" order="9" sideWeight="0.3601093" weight="0.32937366" />
+      <window_info anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" visible="true" weight="0.23287672" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1530,29 +391,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>370</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/loss_functions.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/data/prepare_train_data.py</url>
           <line>38</line>
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/data/kitti_raw_loader.py</url>
-          <line>175</line>
+          <line>176</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/data/kitti_raw_loader.py</url>
-          <line>224</line>
+          <line>225</line>
           <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/inverse_warp.py</url>
+          <line>229</line>
+          <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1561,6 +417,7 @@
         <watch expression="[tgt_img]" />
         <watch expression="ref_imgs" />
         <watch expression="np.copy(sample['intrinsics'])" />
+        <watch expression="pixel_coords[0,:,0,0]" language="Python" />
         <watch expression="self.samples" language="Python" />
         <watch expression="__py_debug_temp_var_1874791770" />
         <watch expression="data_loader" language="Python" />
@@ -1571,6 +428,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>pixel_coords[0,:,0,0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>scene_data</expression-string>
         <language-id>Python</language-id>
@@ -1613,11 +475,6 @@
       </expression>
       <expression>
         <expression-string>train_loader</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ref_imgs</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1718,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9702">
-          <caret line="449" selection-start-line="449" selection-end-line="449" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/PoseExpNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1562">
@@ -1742,13 +592,6 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/matplotlib/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="617" selection-start-line="617" selection-end-line="617" />
         </state>
       </provider>
     </entry>
@@ -1776,64 +619,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_inference.py">
+    <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#21#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="-347">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#524#695#0" />
+            <element signature="e#1470#2082#0" />
+            <element signature="e#2337#11785#0" />
+            <element signature="e#3675#4124#0" />
+            <element signature="e#4171#4411#0" />
+            <element signature="e#4483#6393#0" />
+            <element signature="e#6445#7537#0" />
+            <element signature="e#7603#7875#0" />
+            <element signature="e#7984#8395#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inverse_warp.py">
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/nn/functional.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#128#477#0" />
-            <element signature="e#530#831#0" />
-            <element signature="e#886#1804#0" />
-            <element signature="e#1879#2927#0" />
-            <element signature="e#2956#4072#0" />
-            <element signature="e#4099#4998#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2784">
+          <caret line="2520" column="4" selection-start-line="2520" selection-start-column="4" selection-end-line="2520" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_transforms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="390">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1846,27 +660,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+        <state relative-caret-position="148">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="224" column="74" selection-start-line="224" selection-start-column="74" selection-end-line="224" selection-end-column="74" />
+        <state relative-caret-position="597">
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="475" selection-start-line="475" selection-end-line="475" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#16202#19784#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/matplotlib/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="637" selection-start-line="637" selection-end-line="637" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#333#504#0" />
-            <element signature="e#524#695#0" />
-            <element signature="e#747#1436#0" />
-            <element signature="e#1470#2082#0" />
-            <element signature="e#2125#2300#0" />
-            <element signature="e#3675#4124#0" />
-            <element signature="e#4171#4411#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="9" column="21" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inverse_warp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="231" column="2" selection-start-line="231" selection-start-column="2" selection-end-line="231" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#530#831#0" />
+            <element signature="e#886#2250#0" />
+            <element signature="e#2956#4072#0" />
+            <element signature="e#4099#4998#0" />
           </folding>
         </state>
       </provider>
