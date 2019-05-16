@@ -213,7 +213,7 @@ def inverse_warp(img, depth, pose, intrinsics, rotation_mode='euler', padding_mo
 
     batch_size, _, img_height, img_width = img.size()
 
-                            #pixel_coords也使用了(这是个常量！量等于坐标)， 通过深度图和像素坐标，得到相机坐标
+                            #pixel_coords也使用了(这是个常量！量等于坐标)， 通过深度图和像素坐标，得到相机坐标DIBRZ
     cam_coords = pixel2cam(depth, intrinsics.inverse())  # [B,3,H,W]2
 
     pose_mat = pose_vec2mat(pose, rotation_mode)  # [B,3,4]
@@ -223,7 +223,9 @@ def inverse_warp(img, depth, pose, intrinsics, rotation_mode='euler', padding_mo
 
     rot, tr = proj_cam_to_src_pixel[:,:,:3], proj_cam_to_src_pixel[:,:,-1:]#得到R,t ，这里只是为了简化，R[B,3,3], t[b,3,1]
     src_pixel_coords = cam2pixel(cam_coords, rot, tr, padding_mode)  # [B,H,W,2]
-                                 #[B,3,H,W]          [B,H,W,2]
+    #这个矩阵的坐标就是
+
+                                 #[B,3,H,W]          [B,H,W,2] 图像偏移变换
     projected_img = F.grid_sample(input=img, grid = src_pixel_coords, padding_mode=padding_mode)#[B,3,H,W]
 
     valid_points = src_pixel_coords.abs().max(dim=-1)[0] <= 1

@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b690094-0e1d-4425-a161-95753da2ebe2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/data/kitti_raw_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/kitti_raw_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inverse_warp.py" beforeDir="false" afterPath="$PROJECT_DIR$/inverse_warp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,10 +27,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loss_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="396">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#443#2457#0" />
               </folding>
             </state>
           </provider>
@@ -39,14 +40,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inverse_warp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="231" column="2" selection-start-line="231" selection-start-column="2" selection-end-line="231" selection-end-column="2" />
+            <state relative-caret-position="739">
+              <caret line="215" column="82" selection-start-line="215" selection-start-column="82" selection-end-line="215" selection-end-column="82" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#530#831#0" />
-                <element signature="e#886#2250#0" />
-                <element signature="e#2956#4072#0" />
-                <element signature="e#4099#4998#0" />
               </folding>
             </state>
           </provider>
@@ -55,11 +52,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="475" selection-start-line="475" selection-end-line="475" />
+            <state relative-caret-position="291">
+              <caret line="283" column="8" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#5074#12584#0" />
                 <element signature="e#16202#19784#0" />
+                <element signature="e#19892#22060#0" />
               </folding>
             </state>
           </provider>
@@ -72,9 +71,6 @@
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#1071#1327#0" />
-                <element signature="e#1505#1936#0" />
-                <element signature="e#2108#2882#0" />
               </folding>
             </state>
           </provider>
@@ -83,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
+            <state relative-caret-position="528">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -95,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
+            <state relative-caret-position="9702">
               <caret line="449" selection-start-line="449" selection-end-line="449" />
             </state>
           </provider>
@@ -104,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_inference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="1694">
               <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -116,19 +112,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-347">
+            <state relative-caret-position="748">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#524#695#0" />
                 <element signature="e#1470#2082#0" />
-                <element signature="e#2337#11785#0" />
-                <element signature="e#3675#4124#0" />
-                <element signature="e#4171#4411#0" />
-                <element signature="e#4483#6393#0" />
-                <element signature="e#6445#7537#0" />
-                <element signature="e#7603#7875#0" />
-                <element signature="e#7984#8395#0" />
               </folding>
             </state>
           </provider>
@@ -205,17 +194,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-125" />
-    <option name="y" value="100" />
-    <option name="width" value="1843" />
-    <option name="height" value="980" />
+    <option name="x" value="993" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,6 +220,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,9 +338,9 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" weight="0.16351862" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" visible="true" weight="0.08032787" />
       <window_info id="Structure" order="1" sideWeight="0.50402576" side_tool="true" weight="0.16557378" />
-      <window_info id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" visible="true" weight="0.16351862" />
+      <window_info id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" weight="0.16351862" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989071" weight="0.21812434" />
@@ -362,7 +351,7 @@
       <window_info anchor="bottom" x="73" y="405" width="1840" height="305" id="Terminal" order="7" sideWeight="0.49562842" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010929" side_tool="true" weight="0.22354212" />
       <window_info anchor="bottom" x="78" y="415" width="1830" height="275" id="Python Console" order="9" sideWeight="0.3601093" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" visible="true" weight="0.30769232" />
+      <window_info anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" weight="0.30769232" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -370,7 +359,7 @@
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" visible="true" weight="0.16351862" />
       <window_info id="Structure" order="1" sideWeight="0.50402576" side_tool="true" weight="0.16557378" />
-      <window_info active="true" id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" visible="true" weight="0.16351862" />
+      <window_info active="true" id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" weight="0.16351862" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989071" weight="0.21812434" />
@@ -407,7 +396,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/inverse_warp.py</url>
-          <line>229</line>
+          <line>231</line>
           <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>
@@ -619,70 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#524#695#0" />
-            <element signature="e#1470#2082#0" />
-            <element signature="e#2337#11785#0" />
-            <element signature="e#3675#4124#0" />
-            <element signature="e#4171#4411#0" />
-            <element signature="e#4483#6393#0" />
-            <element signature="e#6445#7537#0" />
-            <element signature="e#7603#7875#0" />
-            <element signature="e#7984#8395#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/nn/functional.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2784">
           <caret line="2520" column="4" selection-start-line="2520" selection-start-column="4" selection-end-line="2520" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom_transforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#1071#1327#0" />
-            <element signature="e#1505#1936#0" />
-            <element signature="e#2108#2882#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="449" selection-start-line="449" selection-end-line="449" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="475" selection-start-line="475" selection-end-line="475" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#16202#19784#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
@@ -710,9 +629,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9702">
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run_inference.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="1694">
           <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -720,16 +656,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inverse_warp.py">
+    <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="231" column="2" selection-start-line="231" selection-start-column="2" selection-end-line="231" selection-end-column="2" />
+        <state relative-caret-position="748">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#530#831#0" />
-            <element signature="e#886#2250#0" />
-            <element signature="e#2956#4072#0" />
-            <element signature="e#4099#4998#0" />
+            <element signature="e#524#695#0" />
+            <element signature="e#1470#2082#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="283" column="8" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#5074#12584#0" />
+            <element signature="e#16202#19784#0" />
+            <element signature="e#19892#22060#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_transforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#443#2457#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inverse_warp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="215" column="82" selection-start-line="215" selection-start-column="82" selection-end-line="215" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
