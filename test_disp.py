@@ -12,18 +12,23 @@ from models import DispNetS, PoseExpNet
 
 parser = argparse.ArgumentParser(description='Script for DispNet testing with corresponding groundTruth',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument("--pretrained-dispnet",  type=str, help="pretrained DispNet path",default = '/home/roit/others/models/SfMLearner/dispnet_model_best.pth')
 
-parser.add_argument("--pretrained-posenet", default = '/home/roit/others/models/SfMLearner/pose_model_best.pth', type=str, help="pretrained PoseNet path (for scale factor)")
+
+parser.add_argument("--pretrained-dispnet",  type=str, help="pretrained DispNet path",
+                    default = '/home/roit/models/SfMLearner/trained_self/dispnet_model_best.pth.tar')
+
+parser.add_argument("--pretrained-posenet",type=str, help="pretrained PoseNet path (for scale factor)",
+                    default = '/home/roit/models/SfMLearner/trained_self/exp_pose_model_best.pth.tar')
+
 parser.add_argument("--img-height", default=128, type=int, help="Image height")
 parser.add_argument("--img-width", default=416, type=int, help="Image width")
 parser.add_argument("--no-resize", action='store_true', help="no resizing is done")
 parser.add_argument("--min-depth", default=1e-3)
 parser.add_argument("--max-depth", default=80)
 
-parser.add_argument("--dataset-dir", default='/home/roit/others/datasets/KITTI/raw_data/test/sq1', type=str, help="Dataset directory")
-parser.add_argument("--dataset-list", default=None, type=str, help="Dataset list file")
-parser.add_argument("--output-dir", default=None, type=str, help="Output directory for saving predictions in a big 3D numpy file")
+parser.add_argument("--dataset-dir", default='/home/roit/datasets/KITTI/raw_data/', type=str, help="Dataset directory")
+parser.add_argument("--dataset-list", default='kitti_eval/test_file2.txt', type=str, help="Dataset list file")
+parser.add_argument("--output-dir", default='test_disp_out', type=str, help="Output directory for saving predictions in a big 3D numpy file")
 
 parser.add_argument("--gt-type", default='KITTI', type=str, help="GroundTruth data type", choices=['npy', 'png', 'KITTI', 'stillbox'])
 parser.add_argument("--gps", '-g', action='store_true',
@@ -68,14 +73,14 @@ def main():
                                use_gps=args.gps)
 
     print('{} files to test'.format(len(test_files)))
-    errors = np.zeros((2, 9, len(test_files)), np.float32)
+    errors = np.zeros((2, 9, len(test_files)), np.float32)#9个指标
     if args.output_dir is not None:
         output_dir = Path(args.output_dir)
         output_dir.makedirs_p()
 
+#main cycle
     for j, sample in enumerate(tqdm(framework)):
         tgt_img = sample['tgt']
-
         ref_imgs = sample['ref']
 
         h,w,_ = tgt_img.shape
@@ -93,7 +98,7 @@ def main():
             img = torch.from_numpy(img).unsqueeze(0)
             img = ((img/255 - 0.5)/0.5).to(device)
             ref_imgs[i] = img
-
+        #1. dispnet part
         pred_disp = disp_net(tgt_img).cpu().numpy()[0,0]
 
         if args.output_dir is not None:
@@ -103,15 +108,15 @@ def main():
 
         gt_depth = sample['gt_depth']
 
-        pred_depth = 1/pred_disp
-        pred_depth_zoomed = zoom(pred_depth,
-                                 (gt_depth.shape[0]/pred_depth.shape[0],
-                                  gt_depth.shape[1]/pred_depth.shape[1])
+        pred_depth = 1/pred_disp#[h,w]128,416
+        pred_depth_zoomed = zoom(pred_depth,#[375,1242]缩放
+                                 (gt_depth.shape[0]/pred_depth.shape[0],#375/128
+                                  gt_depth.shape[1]/pred_depth.shape[1])#1242/416
                                  ).clip(args.min_depth, args.max_depth)
-        if sample['mask'] is not None:
+        if sample['mask'] is not None:#false true 矩阵, hxw
             pred_depth_zoomed = pred_depth_zoomed[sample['mask']]
-            gt_depth = gt_depth[sample['mask']]
-
+            gt_depth = gt_depth[sample['mask']]#将sample['mask']矩阵内非false的值取出来，拉成一排
+        #2. posenet part
         if seq_length > 1:
             # Reorganize ref_imgs : tgt is middle frame but not necessarily the one used in DispNetS
             # (in case sample to test was in end or beginning of the image sequence)
@@ -120,21 +125,22 @@ def main():
             reorganized_refs = ref_imgs[:middle_index] + ref_imgs[middle_index + 1:]
             _, poses = pose_net(tgt, reorganized_refs)
             displacement_magnitudes = poses[0,:,:3].norm(2,1).cpu().numpy()
-
+            #posenet part
             scale_factor = np.mean(sample['displacements'] / displacement_magnitudes)
             errors[0,:,j] = compute_errors(gt_depth, pred_depth_zoomed*scale_factor)
-
+        #dispnet part
         scale_factor = np.median(gt_depth)/np.median(pred_depth_zoomed)
         errors[1,:,j] = compute_errors(gt_depth, pred_depth_zoomed*scale_factor)
 
     mean_errors = errors.mean(2)
     error_names = ['abs_diff', 'abs_rel','sq_rel','rms','log_rms', 'abs_log', 'a1','a2','a3']
+    #1. posenet part
     if args.pretrained_posenet:
-        print("Results with scale factor determined by PoseNet : ")
+        print("\nResults with scale factor determined by PoseNet : ")
         print("{:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}".format(*error_names))
         print("{:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}".format(*mean_errors[0]))
-
-    print("Results with scale factor determined by GT/prediction ratio (like the original paper) : ")
+    #2. dispnet part
+    print("\nResults with scale factor determined by GT/prediction ratio (like the original paper) : ")
     print("{:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}".format(*error_names))
     print("{:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}".format(*mean_errors[1]))
 
@@ -142,7 +148,7 @@ def main():
         np.save(output_dir/'predictions.npy', predictions)
 
 
-def compute_errors(gt, pred):
+def compute_errors(gt, pred):#1d array, 每次因为mask都不一样, 所以长度都不一样
     thresh = np.maximum((gt / pred), (pred / gt))
     a1 = (thresh < 1.25   ).mean()
     a2 = (thresh < 1.25 ** 2).mean()

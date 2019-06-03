@@ -15,15 +15,15 @@ parser = argparse.ArgumentParser(description='Inference script for DispNet learn
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 #parser.add_argument("--output_disp", action='store_true', help="save disparity img",default = 'output/disp/')
 #parser.add_argument("--output_depth", action='store_true', help="save depth img",default = 'output/depth/')
-#parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = '/home/roit/others/models/SfMLearner/dispnet_model_best.pth')
-parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = 'checkpoints/dump/dispnet_model_best.pth')
+parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = '/home/roit/models/SfMLearner/dispnet_model_best.pth')
+#parser.add_argument("--pretrained",  type=str, help="pretrained DispNet path",default = 'checkpoints/dump/dispnet_model_best.pth')
 
 parser.add_argument("--img-height", default=128, type=int, help="Image height")
 parser.add_argument("--img-width", default=416, type=int, help="Image width")
 parser.add_argument("--no-resize", action='store_true', help="no resizing is done")
 
 parser.add_argument("--dataset-list", default=None, type=str, help="Dataset list file")
-parser.add_argument("--dataset-dir", default='/home/roit/others/datasets/KITTI/raw_data/test/sq1', type=str, help="Dataset directory")
+parser.add_argument("--dataset-dir", default='/home/roit/datasets/KITTI/raw_data/test/sq1', type=str, help="Dataset directory")
 parser.add_argument("--output-dir", default='output', type=str, help="Output directory")
 
 parser.add_argument("--img-exts", default=['png', 'jpg','bmp'], nargs='*', type=str, help="images extensions to glob")

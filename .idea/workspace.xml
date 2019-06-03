@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/train.py" line="221" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/train.py" line="275" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/test_disp.py" line="11" mnemonic="3" />
-    <bookmark url="file://$PROJECT_DIR$/train.py" line="19" mnemonic="4" />
-    <bookmark url="file://$PROJECT_DIR$/train.py" line="136" mnemonic="5" />
-    <bookmark url="file://$PROJECT_DIR$/train.py" line="108" mnemonic="6" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b690094-0e1d-4425-a161-95753da2ebe2" name="Default Changelist" comment="">
+    <list default="true" id="ed5aa2d4-ece0-4670-a577-7909294cff1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inverse_warp.py" beforeDir="false" afterPath="$PROJECT_DIR$/inverse_warp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/train-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/kitti_raw_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/kitti_raw_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitti_eval/test_files_eigen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/kitti_eval/test_files_eigen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000000_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000000_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000001_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000001_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000002_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000002_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000003_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000003_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000004_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000004_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000005_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000005_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000006_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000006_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000007_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000007_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000008_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000008_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000009_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000009_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/depth/-0000000010_depth.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/depth/-0000000010_depth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000000_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000000_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000001_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000001_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000002_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000002_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000003_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000003_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000004_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000004_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000005_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000005_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000006_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000006_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000007_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000007_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000008_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000008_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000009_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000009_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/disp/-0000000010_disp.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/disp/-0000000010_disp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_disp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_disp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_pose.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_pose.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,89 +39,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="SfMLearner_pt" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loss_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#443#2457#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inverse_warp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="215" column="82" selection-start-line="215" selection-start-column="82" selection-end-line="215" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="283" column="8" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#5074#12584#0" />
-                <element signature="e#16202#19784#0" />
-                <element signature="e#19892#22060#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom_transforms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9702">
-              <caret line="449" selection-start-line="449" selection-end-line="449" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_inference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1694">
-              <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
+            <state relative-caret-position="154">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -110,15 +54,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
+        <entry file="file://$PROJECT_DIR$/loss_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="638">
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#524#695#0" />
-                <element signature="e#1470#2082#0" />
+                <element signature="e#4062#5437#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-58">
+              <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#5164#8550#0" />
+                <element signature="e#8675#12257#0" />
+                <element signature="e#12365#14533#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="33" column="81" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="81" />
+              <folding>
+                <element signature="e#21#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_disp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitti_eval/depth_evaluation_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/autograd/grad_mode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -127,36 +139,21 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>poten</find>
-      <find>none</find>
-      <find>save_pa</find>
-      <find>@</find>
-      <find>dataset_dir</find>
-      <find>no_grad</find>
-      <find>dum</find>
-      <find>train_loa</find>
-      <find>epoch_s</find>
-      <find>dataloader</find>
+      <find>intrinsics</find>
       <find>dataset</find>
-      <find>DataloaderIter</find>
-      <find>pose</find>
-      <find>mask_loss_weight</find>
-      <find>intrinsic</find>
-      <find>PoseExpNet</find>
-      <find>intrinsics_inv</find>
-      <find>set</find>
-      <find>pixel_coords</find>
-      <find>set_id</find>
-      <find>tm</find>
-      <find>transform</find>
-      <find>intrin</find>
-      <find>scene</find>
-      <find>test</find>
-      <find>get_P_rect</find>
-      <find>collect_scenes</find>
-      <find>SequenceFolder</find>
-      <find>roty</find>
-      <find>args.data</find>
+      <find>compute_errors</find>
+      <find>sample</find>
+      <find>model</find>
+      <find>disp</find>
+      <find>mask</find>
+      <find>seq_length</find>
+      <find>erro</find>
+      <find>check</find>
+      <find>save_path</find>
+      <find>errors</find>
+      <find>save</find>
+      <find>valid</find>
+      <find>2011</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,40 +161,31 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/data/prepare_train_data.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/train.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/inverse_warp.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test_pose.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/run_inference.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/loss_functions.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/stillbox_eval/depth_evaluation_utils.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test_disp.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/train.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/kitti_eval/depth_evaluation_utils.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/run_inference.py" />
-        <option value="$PROJECT_DIR$/logger.py" />
-        <option value="$PROJECT_DIR$/models/PoseExpNet.py" />
-        <option value="$PROJECT_DIR$/custom_transforms.py" />
-        <option value="$PROJECT_DIR$/datasets/sequence_folders.py" />
-        <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/loss_functions.py" />
-        <option value="$PROJECT_DIR$/data/prepare_train_data.py" />
+        <option value="$PROJECT_DIR$/test_pose.py" />
         <option value="$PROJECT_DIR$/data/kitti_raw_loader.py" />
-        <option value="$PROJECT_DIR$/inverse_warp.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/SfMLearner_pt.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/test_disp.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="993" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
+    <option name="x" value="408" />
+    <option name="y" value="112" />
+    <option name="width" value="1162" />
+    <option name="height" value="883" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -225,8 +213,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iprojects/monodepth_pt" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -240,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.test_disp">
     <configuration name="prepare_train_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SfMLearner_pt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -283,6 +270,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_disp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SfMLearner_pt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_disp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_pose" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SfMLearner_pt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_pose.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SfMLearner_pt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,8 +335,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_disp" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.prepare_train_data" />
+        <item itemvalue="Python.test_pose" />
         <item itemvalue="Python.run_inference" />
       </list>
     </recent_temporary>
@@ -317,397 +348,212 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b690094-0e1d-4425-a161-95753da2ebe2" name="Default Changelist" comment="" />
-      <created>1557408949746</created>
+      <changelist id="ed5aa2d4-ece0-4670-a577-7909294cff1a" name="Default Changelist" comment="" />
+      <created>1559264141932</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557408949746</updated>
+      <updated>1559264141932</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView" selected-index="3">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" visible="true" weight="0.08032787" />
-      <window_info id="Structure" order="1" sideWeight="0.50402576" side_tool="true" weight="0.16557378" />
-      <window_info id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" weight="0.16351862" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989071" weight="0.21812434" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" x="78" y="400" width="1830" height="305" id="TODO" order="5" sideWeight="0.15027322" weight="0.32937366" />
-      <window_info anchor="bottom" x="78" y="400" width="1830" height="305" id="Version Control" order="6" sideWeight="0.49562842" weight="0.32937366" />
-      <window_info anchor="bottom" x="73" y="405" width="1840" height="305" id="Terminal" order="7" sideWeight="0.49562842" weight="0.32937366" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010929" side_tool="true" weight="0.22354212" />
-      <window_info anchor="bottom" x="78" y="415" width="1830" height="275" id="Python Console" order="9" sideWeight="0.3601093" weight="0.32937366" />
-      <window_info anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" weight="0.30769232" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40820736" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958791" visible="true" weight="0.16351862" />
-      <window_info id="Structure" order="1" sideWeight="0.50402576" side_tool="true" weight="0.16557378" />
-      <window_info active="true" id="Favorites" order="2" sideWeight="0.5041209" side_tool="true" weight="0.16351862" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989071" weight="0.21812434" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" x="78" y="400" width="1830" height="305" id="TODO" order="5" sideWeight="0.15027322" weight="0.32937366" />
-      <window_info anchor="bottom" x="78" y="400" width="1830" height="305" id="Version Control" order="6" sideWeight="0.49562842" weight="0.32937366" />
-      <window_info anchor="bottom" x="73" y="405" width="1840" height="305" id="Terminal" order="7" sideWeight="0.49562842" weight="0.32937366" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010929" side_tool="true" weight="0.22354212" />
-      <window_info anchor="bottom" x="78" y="415" width="1830" height="275" id="Python Console" order="9" sideWeight="0.3601093" weight="0.32937366" />
-      <window_info anchor="bottom" x="-2" y="603" width="1830" height="305" id="Debug" order="10" sideWeight="0.5010929" visible="true" weight="0.23287672" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data/prepare_train_data.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data/kitti_raw_loader.py</url>
-          <line>176</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data/kitti_raw_loader.py</url>
-          <line>225</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/inverse_warp.py</url>
-          <line>231</line>
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="[tgt_img]" />
-        <watch expression="ref_imgs" />
-        <watch expression="np.copy(sample['intrinsics'])" />
-        <watch expression="pixel_coords[0,:,0,0]" language="Python" />
-        <watch expression="self.samples" language="Python" />
-        <watch expression="__py_debug_temp_var_1874791770" />
-        <watch expression="data_loader" language="Python" />
-        <watch expression="P_rect" language="Python" />
-        <watch expression="scene_data" language="Python" />
+        <watch expression="pred_depth_zoomed.shape" language="Python" />
+        <watch expression="sample['mask']" language="Python" />
+        <watch expression="pred_depth_zoomed" language="Python" />
+        <watch expression="gt_depth" language="Python" />
+        <watch expression="seq_length" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>pixel_coords[0,:,0,0]</expression-string>
+        <expression-string>seq_length</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>scene_data</expression-string>
+        <expression-string>gt_depth</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>P_rect</expression-string>
+        <expression-string>pred_depth_zoomed</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data_loader</expression-string>
+        <expression-string>sample['mask']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.samples</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pose</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>zip(depth, explainability_mask)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>intrinsics_scaled</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>train_loader[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>train_loader</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>tgt_img.size(2)</expression-string>
+        <expression-string>pred_depth_zoomed.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/argparse.py">
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/scipy/ndimage/interpolation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2362">
-          <caret line="1309" column="34" selection-start-line="1309" selection-start-column="34" selection-end-line="1309" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/path/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="143" column="8" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#293#1400#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/numpy/lib/_datasource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13464">
-          <caret line="620" column="55" selection-start-line="620" selection-start-column="55" selection-end-line="620" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/autograd/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/utils/data/dataloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#1137#1467#0" />
-            <element signature="e#2172#3251#0" />
-            <element signature="e#5674#6752#0" />
-            <element signature="e#7065#8892#0" />
-            <element signature="e#11163#11216#0" />
-            <element signature="e#25377#26432#0" />
-            <element signature="e#27607#27978#0" />
-            <element signature="e#28231#28622#0" />
-            <element signature="e#28665#30861#0" />
-            <element signature="e#30988#33749#1" />
-            <element signature="e#34026#35541#0" />
-            <element signature="e#35589#35875#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/multiprocessing/queues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="223" column="30" lean-forward="true" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/multiprocessing/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10472">
-          <caret line="483" selection-start-line="483" selection-end-line="483" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/PoseExpNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="536" column="4" selection-start-line="536" selection-start-column="4" selection-end-line="536" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_pose.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        <state relative-caret-position="2381">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/matplotlib/cbook/__init__.py">
+    <entry file="file://$PROJECT_DIR$/models/PoseExpNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="391" selection-start-line="391" selection-end-line="391" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="294" selection-start-line="294" selection-end-line="294" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_disp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/nn/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2784">
-          <caret line="2520" column="4" selection-start-line="2520" selection-start-column="4" selection-end-line="2520" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/matplotlib/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="637" selection-start-line="637" selection-end-line="637" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="9" column="21" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/sequence_folders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/tensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9702">
-          <caret line="449" selection-start-line="449" selection-end-line="449" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_inference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#524#695#0" />
-            <element signature="e#1470#2082#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="283" column="8" selection-start-line="283" selection-start-column="8" selection-end-line="283" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#5074#12584#0" />
-            <element signature="e#16202#19784#0" />
-            <element signature="e#19892#22060#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom_transforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#443#2457#0" />
-          </folding>
+        <state>
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inverse_warp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="215" column="82" selection-start-line="215" selection-start-column="82" selection-end-line="215" selection-end-column="82" />
+        <state relative-caret-position="422">
+          <caret line="221" column="25" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#4062#5437#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stillbox_eval/depth_evaluation_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/nn/modules/conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/kitti_raw_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/static_frames.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_scenes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#5164#8550#0" />
+            <element signature="e#8675#12257#0" />
+            <element signature="e#12365#14533#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="33" column="81" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="81" />
+          <folding>
+            <element signature="e#21#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/autograd/grad_mode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitti_eval/depth_evaluation_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_disp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

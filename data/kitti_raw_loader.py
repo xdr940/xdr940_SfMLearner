@@ -110,8 +110,8 @@ class KittiRawLoader(object):
         self.img_width = img_width
         self.cam_ids = ['02', '03']
 
-        #self.date_list = ['2011_09_26', '2011_09_28', '2011_09_29', '2011_09_30', '2011_10_03']
-        self.date_list = ['2011_09_26']
+        self.date_list = ['2011_09_26', '2011_09_28', '2011_09_29', '2011_09_30', '2011_10_03']
+        #self.date_list = ['2011_09_26']
 
         self.min_speed = min_speed
         self.get_depth = get_depth

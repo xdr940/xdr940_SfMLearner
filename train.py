@@ -19,13 +19,19 @@ import matplotlib.pyplot as plt
 parser = argparse.ArgumentParser(description='Structure from Motion Learner training on KITTI and CityScapes Dataset',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
+parser.add_argument("--pretrained-disp",  type=str, help="pretrained DispNet path",
+                    default = '/home/roit/models/SfMLearner/trained_self/dispnet_model_best.pth.tar')
+parser.add_argument('--pretrained-exppose', dest='pretrained_exp_pose',
+                    default='/home/roit/models/SfMLearner/trained_self/exp_pose_model_best.pth.tar', metavar='PATH',
+                    help='path to pre-trained Exp Pose net model')
+
 
 parser.add_argument("--data",help='path to original dataset',default='processed_data/')#处理完的训练集要包含sequence 和两个txt文档
 
 parser.add_argument('--dataset-format', default='sequential', metavar='STR',
                     help='dataset format, stacked: stacked frames (from original TensorFlow code) \
                     sequential: sequential folders (easier to convert to with a non KITTI/Cityscape dataset')#训练集形式
-parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=9)#自己加上前一张，后一张，一共三张
+parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=5)#自己加上前一张，后一张，一共三张
 parser.add_argument('--rotation-mode', type=str, choices=['euler', 'quat'], default='euler',
                     help='rotation mode for PoseExpnet : euler (yaw,pitch,roll) or quaternion (last 3 coefficients)')
 parser.add_argument('--padding-mode', type=str, choices=['zeros', 'border'], default='zeros',
@@ -36,7 +42,7 @@ parser.add_argument('--with-gt', action='store_true', help='use ground truth for
                     You need to store it in npy 2D arrays see data/kitti_raw_loader.py for an example')
 parser.add_argument('-j', '--workers', default=5, type=int, metavar='N',
                     help='number of data loading workers')
-parser.add_argument('--epochs', default=200, type=int, metavar='N',
+parser.add_argument('--epochs', default=20, type=int, metavar='N',
                     help='number of total epochs to run')
 parser.add_argument('--epoch-size', default=10, type=int, metavar='N',
                     help='manual epoch size (will match dataset size if not set)')
@@ -54,10 +60,8 @@ parser.add_argument('--print-freq', default=10, type=int,
                     metavar='N', help='print frequency')
 parser.add_argument('-e', '--evaluate', dest='evaluate', action='store_true',
                     help='evaluate model on validation set')
-parser.add_argument('--pretrained-disp', dest='pretrained_disp', default=None, metavar='PATH',
-                    help='path to pre-trained dispnet model')
-parser.add_argument('--pretrained-exppose', dest='pretrained_exp_pose', default=None, metavar='PATH',
-                    help='path to pre-trained Exp Pose net model')
+
+
 parser.add_argument('--seed', default=0, type=int, help='seed for random functions, and network initialization')
 parser.add_argument('--log-summary', default='progress_log_summary.csv', metavar='PATH',
                     help='csv where to save per-epoch train and valid stats')
@@ -75,188 +79,6 @@ n_iter = 0
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
 
-def main():
-    global best_error, n_iter, device
-    args = parser.parse_args()
-    if args.dataset_format == 'stacked':
-        from datasets.stacked_sequence_folders import SequenceFolder
-    elif args.dataset_format == 'sequential':
-        from datasets.sequence_folders import SequenceFolder
-    save_path = save_path_formatter(args, parser)
-    args.save_path = 'checkpoints'/save_path
-    print('=> will save everything to {}'.format(args.save_path))
-    args.save_path.makedirs_p()
-    torch.manual_seed(args.seed)
-    if args.evaluate:
-        args.epochs = 0
-
-    training_writer = SummaryWriter(args.save_path)
-    output_writers = []
-    if args.log_output:
-        for i in range(3):
-            output_writers.append(SummaryWriter(args.save_path/'valid'/str(i)))
-
-    # Data loading code
-    normalize = custom_transforms.Normalize(mean=[0.5, 0.5, 0.5],
-                                            std=[0.5, 0.5, 0.5])
-    train_transform = custom_transforms.Compose([
-        custom_transforms.RandomHorizontalFlip(),
-        custom_transforms.RandomScaleCrop(),
-        custom_transforms.ArrayToTensor(),
-        normalize
-    ])
-    '''transform'''
-    valid_transform = custom_transforms.Compose([custom_transforms.ArrayToTensor(), normalize])
-
-    print("=> fetching scenes in '{}'".format(args.data))
-    train_set = SequenceFolder(
-        args.data,#processed_data_train_sets
-        transform=train_transform,#把几种变换函数输入进去
-        seed=args.seed,
-        train=True,
-        sequence_length=args.sequence_length
-    )
-
-    # if no Groundtruth is avalaible, Validation set is the same type as training set to measure photometric loss from warping
-    if args.with_gt:
-        from datasets.validation_folders import ValidationSet
-        val_set = ValidationSet(
-            args.data,
-            transform=valid_transform
-        )
-    else:
-        val_set = SequenceFolder(
-            args.data,
-            transform=valid_transform,
-            seed=args.seed,
-            train=False,
-            sequence_length=args.sequence_length,
-        )
-    print('{} samples found in {} train scenes'.format(len(train_set), len(train_set.scenes)))#训练集都是序列,不用左右
-    print('{} samples found in {} valid scenes'.format(len(val_set), len(val_set.scenes)))#测试集也是序列,不需要左右
-    train_loader = torch.utils.data.DataLoader(#data(list): [tensor(B,3,H,W),list(B),(B,H,W),(b,h,w)]
-        dataset=train_set,#sequenceFolder
-        batch_size=args.batch_size,
-        shuffle=True,#打乱
-        num_workers=args.workers,#多线程读取数据
-        pin_memory=True)
-    val_loader = torch.utils.data.DataLoader(
-        dataset=val_set,
-        batch_size=args.batch_size,
-        shuffle=False,#不打乱
-        num_workers=args.workers,
-        pin_memory=True)
-
-    if args.epoch_size == 0:
-        args.epoch_size = len(train_loader)
-
-    # create model
-    print("=> creating model")
-
-    disp_net = models.DispNetS().to(device)
-    output_exp = args.mask_loss_weight > 0
-    if not output_exp:
-        print("=> no mask loss, PoseExpnet will only output pose")
-    pose_exp_net = models.PoseExpNet(nb_ref_imgs=args.sequence_length - 1, output_exp=args.mask_loss_weight > 0).to(device)
-
-    if args.pretrained_exp_pose:
-        print("=> using pre-trained weights for explainabilty and pose net")
-        weights = torch.load(args.pretrained_exp_pose)
-        pose_exp_net.load_state_dict(weights['state_dict'], strict=False)
-    else:
-        pose_exp_net.init_weights()
-
-    if args.pretrained_disp:
-        print("=> using pre-trained weights for Dispnet")
-        weights = torch.load(args.pretrained_disp)
-        disp_net.load_state_dict(weights['state_dict'])
-    else:
-        disp_net.init_weights()
-
-    cudnn.benchmark = True
-    disp_net = torch.nn.DataParallel(disp_net)
-    pose_exp_net = torch.nn.DataParallel(pose_exp_net)
-
-    print('=> setting adam solver')
-
-    optim_params = [
-        {'params': disp_net.parameters(), 'lr': args.lr},
-        {'params': pose_exp_net.parameters(), 'lr': args.lr}
-    ]
-    optimizer = torch.optim.Adam(optim_params,
-                                 betas=(args.momentum, args.beta),
-                                 weight_decay=args.weight_decay)
-
-    with open(args.save_path/args.log_summary, 'w') as csvfile:
-        writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow(['train_loss', 'validation_loss'])
-
-    with open(args.save_path/args.log_full, 'w') as csvfile:
-        writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow(['train_loss', 'photo_loss', 'explainability_loss', 'smooth_loss'])
-    n_epochs=args.epochs
-    train_size = min(len(train_loader), args.epoch_size)
-    valid_size = len(val_loader)
-    #print(n_epochs,train_size,valid_size)
-    #print(type(n_epochs),type(train_size),type(valid_size))
-
-    logger = TermLogger(n_epochs=args.epochs, train_size=min(len(train_loader), args.epoch_size), valid_size=len(val_loader))
-    logger.epoch_bar.start()
-
-    if args.pretrained_disp or args.evaluate:
-        logger.reset_valid_bar()
-        if args.with_gt:
-            errors, error_names = validate_with_gt(args, val_loader, disp_net, 0, logger, output_writers)
-        else:
-            errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, 0, logger, output_writers)
-        for error, name in zip(errors, error_names):
-            training_writer.add_scalar(name, error, 0)
-        error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names[2:9], errors[2:9]))
-        logger.valid_writer.write(' * Avg {}'.format(error_string))
-    """main cycle"""
-    for epoch in range(args.epochs):
-        logger.epoch_bar.update(epoch)
-
-        ''' train for one epoch'''
-        logger.reset_train_bar()
-        train_loss = train(args, train_loader, disp_net, pose_exp_net, optimizer, args.epoch_size, logger, training_writer)
-        logger.train_writer.write(' * Avg Loss : {:.3f}'.format(train_loss))
-
-        # evaluate on validation set
-        logger.reset_valid_bar()
-        if args.with_gt:
-            errors, error_names = validate_with_gt(args, val_loader, disp_net, epoch, logger, output_writers)
-        else:
-            errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger, output_writers)
-
-        error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names, errors))
-        logger.valid_writer.write(' * Avg {}'.format(error_string))
-
-        for error, name in zip(errors, error_names):
-            training_writer.add_scalar(name, error, epoch)
-
-        # Up to you to chose the most relevant error to measure your model's performance, careful some measures are to maximize (such as a1,a2,a3)
-        decisive_error = errors[1]
-        if best_error < 0:
-            best_error = decisive_error
-
-        # remember lowest error and save checkpoint
-        is_best = decisive_error < best_error
-        best_error = min(best_error, decisive_error)
-        save_checkpoint(
-            args.save_path, {
-                'epoch': epoch + 1,
-                'state_dict': disp_net.module.state_dict()
-            }, {
-                'epoch': epoch + 1,
-                'state_dict': pose_exp_net.module.state_dict()
-            },
-            is_best)
-
-        with open(args.save_path/args.log_summary, 'a') as csvfile:
-            writer = csv.writer(csvfile, delimiter='\t')
-            writer.writerow([train_loss, decisive_error])
-    logger.epoch_bar.finish()
 
 
 def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, logger, train_writer):
@@ -470,6 +292,193 @@ def validate_with_gt(args, val_loader, disp_net, epoch, logger, output_writers=[
             logger.valid_writer.write('valid: Time {} Abs Error {:.4f} ({:.4f})'.format(batch_time, errors.val[0], errors.avg[0]))
     logger.valid_bar.update(len(val_loader))
     return errors.avg, error_names
+
+
+def main():
+    global best_error, n_iter, device
+    args = parser.parse_args()
+    if args.dataset_format == 'stacked':
+        from datasets.stacked_sequence_folders import SequenceFolder
+    elif args.dataset_format == 'sequential':
+        from datasets.sequence_folders import SequenceFolder
+    save_path = save_path_formatter(args, parser)
+    args.save_path = 'checkpoints'/save_path
+    print('=> will save everything to {}'.format(args.save_path))
+    args.save_path.makedirs_p()
+    torch.manual_seed(args.seed)
+    if args.evaluate:
+        args.epochs = 0
+
+    training_writer = SummaryWriter(args.save_path)
+    output_writers = []
+    if args.log_output:
+        for i in range(3):
+            output_writers.append(SummaryWriter(args.save_path/'valid'/str(i)))
+# Data loading code
+    normalize = custom_transforms.Normalize(mean=[0.5, 0.5, 0.5],
+                                            std=[0.5, 0.5, 0.5])
+    train_transform = custom_transforms.Compose([
+        custom_transforms.RandomHorizontalFlip(),
+        custom_transforms.RandomScaleCrop(),
+        custom_transforms.ArrayToTensor(),
+        normalize
+    ])
+    '''transform'''
+    valid_transform = custom_transforms.Compose([custom_transforms.ArrayToTensor(), normalize])
+
+    print("=> fetching scenes in '{}'".format(args.data))
+    train_set = SequenceFolder(
+        args.data,#processed_data_train_sets
+        transform=train_transform,#把几种变换函数输入进去
+        seed=args.seed,
+        train=True,
+        sequence_length=args.sequence_length
+    )
+    # if no Groundtruth is avalaible, Validation set is
+    # the same type as training set to measure photometric loss from warping
+    if args.with_gt:
+        from datasets.validation_folders import ValidationSet
+        val_set = ValidationSet(
+            args.data,
+            transform=valid_transform
+        )
+    else:
+        val_set = SequenceFolder(
+            args.data,
+            transform=valid_transform,
+            seed=args.seed,
+            train=False,
+            sequence_length=args.sequence_length,
+        )
+    print('{} samples found in {} train scenes'.format(len(train_set), len(train_set.scenes)))#训练集都是序列,不用左右
+    print('{} samples found in {} valid scenes'.format(len(val_set), len(val_set.scenes)))#测试集也是序列,不需要左右
+    train_loader = torch.utils.data.DataLoader(#data(list): [tensor(B,3,H,W),list(B),(B,H,W),(b,h,w)]
+        dataset=train_set,#sequenceFolder
+        batch_size=args.batch_size,
+        shuffle=True,#打乱
+        num_workers=args.workers,#多线程读取数据
+        pin_memory=True)
+    val_loader = torch.utils.data.DataLoader(
+        dataset=val_set,
+        batch_size=args.batch_size,
+        shuffle=False,#不打乱
+        num_workers=args.workers,
+        pin_memory=True)
+
+    if args.epoch_size == 0:
+        args.epoch_size = len(train_loader)
+
+# create model
+    print("=> creating model")
+
+    disp_net = models.DispNetS().to(device)
+    output_exp = args.mask_loss_weight > 0
+    if not output_exp:
+        print("=> no mask loss, PoseExpnet will only output pose")
+    pose_exp_net = models.PoseExpNet(nb_ref_imgs=args.sequence_length - 1, output_exp=args.mask_loss_weight > 0).to(device)
+
+    if args.pretrained_exp_pose:
+        print("=> using pre-trained weights for explainabilty and pose net")
+        weights = torch.load(args.pretrained_exp_pose)
+        pose_exp_net.load_state_dict(weights['state_dict'], strict=False)
+    else:
+        pose_exp_net.init_weights()
+
+    if args.pretrained_disp:
+        print("=> using pre-trained weights for Dispnet")
+        weights = torch.load(args.pretrained_disp)
+        disp_net.load_state_dict(weights['state_dict'])
+    else:
+        disp_net.init_weights()
+
+    cudnn.benchmark = True
+    disp_net = torch.nn.DataParallel(disp_net)
+    pose_exp_net = torch.nn.DataParallel(pose_exp_net)
+
+    print('=> setting adam solver')
+
+    optim_params = [
+        {'params': disp_net.parameters(), 'lr': args.lr},
+        {'params': pose_exp_net.parameters(), 'lr': args.lr}
+    ]
+    optimizer = torch.optim.Adam(optim_params,
+                                 betas=(args.momentum, args.beta),
+                                 weight_decay=args.weight_decay)
+
+    with open(args.save_path/args.log_summary, 'w') as csvfile:
+        writer = csv.writer(csvfile, delimiter='\t')
+        writer.writerow(['train_loss', 'validation_loss'])
+
+    with open(args.save_path/args.log_full, 'w') as csvfile:
+        writer = csv.writer(csvfile, delimiter='\t')
+        writer.writerow(['train_loss', 'photo_loss', 'explainability_loss', 'smooth_loss'])
+    n_epochs=args.epochs
+    train_size = min(len(train_loader), args.epoch_size)
+    valid_size = len(val_loader)
+    #print(n_epochs,train_size,valid_size)
+    #print(type(n_epochs),type(train_size),type(valid_size))
+
+    logger = TermLogger(n_epochs=args.epochs, train_size=min(len(train_loader), args.epoch_size), valid_size=len(val_loader))
+    logger.epoch_bar.start()
+
+    if args.pretrained_disp or args.evaluate:
+        logger.reset_valid_bar()
+        if args.with_gt:
+            errors, error_names = validate_with_gt(args, val_loader, disp_net, 0, logger, output_writers)
+        else:
+            errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, 0, logger, output_writers)
+        for error, name in zip(errors, error_names):
+            training_writer.add_scalar(name, error, 0)
+        error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names[2:9], errors[2:9]))
+        logger.valid_writer.write(' * Avg {}'.format(error_string))
+#main cycle
+    for epoch in range(args.epochs):
+        logger.epoch_bar.update(epoch)
+
+        #1. train for one epoch
+        logger.reset_train_bar()
+        train_loss = train(args, train_loader, disp_net, pose_exp_net, optimizer, args.epoch_size, logger, training_writer)
+        logger.train_writer.write(' * Avg Loss : {:.3f}'.format(train_loss))
+
+        #2. evaluate on validation set
+        logger.reset_valid_bar()
+        if args.with_gt:
+            errors, error_names = validate_with_gt(args, val_loader, disp_net, epoch, logger, output_writers)
+        else:
+            errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger, output_writers)
+
+        error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names, errors))
+        logger.valid_writer.write(' * Avg {}'.format(error_string))
+
+        for error, name in zip(errors, error_names):
+            training_writer.add_scalar(name, error, epoch)
+
+        # Up to you to chose the most relevant error to measure
+        # your model's performance, careful some measures are to maximize (such as a1,a2,a3)
+
+        # 3. remember lowest error and save checkpoint
+        decisive_error = errors[1]
+        if best_error < 0:
+            best_error = decisive_error
+        is_best = decisive_error < best_error
+        best_error = min(best_error, decisive_error)
+
+
+
+        save_checkpoint(
+            args.save_path, {
+                'epoch': epoch + 1,
+                'state_dict': disp_net.module.state_dict()
+            }, {
+                'epoch': epoch + 1,
+                'state_dict': pose_exp_net.module.state_dict()
+            },
+            is_best)
+
+        with open(args.save_path/args.log_summary, 'a') as csvfile:
+            writer = csv.writer(csvfile, delimiter='\t')
+            writer.writerow([train_loss, decisive_error])
+    logger.epoch_bar.finish()
 
 
 if __name__ == '__main__':
