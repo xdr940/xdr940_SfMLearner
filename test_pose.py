@@ -14,20 +14,20 @@ from inverse_warp import pose_vec2mat
 parser = argparse.ArgumentParser(description='Script for PoseNet testing with corresponding groundTruth from KITTI Odometry',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("--pretrained_posenet", type=str, help="pretrained PoseNet path",
-                    default = '/home/roit/models/SfMLearner/dispnet_model_best.pth')
+                    default = '/home/roit/models/SfMLearner/pose_model_best.pth')
 parser.add_argument("--img-height", default=128, type=int, help="Image height")
 parser.add_argument("--img-width", default=416, type=int, help="Image width")
 parser.add_argument("--no-resize", action='store_true', help="no resizing is done")
 parser.add_argument("--min-depth", default=1e-3)
 parser.add_argument("--max-depth", default=80)
 
-parser.add_argument("--dataset-dir", default='/home/roit/datasets/KITTI/raw_data/', type=str, help="Dataset directory")
+parser.add_argument("--dataset-dir", default='/home/roit/datasets/kitti_odometry_color/', type=str, help="Dataset directory")
 
 parser.add_argument("--sequences", default=['09'], type=str, nargs='*', help="sequences to test")
 parser.add_argument("--output-dir", default='test_pose_out', type=str, help="Output directory for saving predictions in a big 3D numpy file")
 parser.add_argument("--img-exts", default=['png', 'jpg', 'bmp'], nargs='*', type=str, help="images extensions to glob")
 parser.add_argument("--rotation-mode", default='euler', choices=['euler', 'quat'], type=str)
-
+#test 的时候一次就是固定5张（算上关键帧）
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
 
@@ -35,11 +35,17 @@ device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cp
 def main():
     args = parser.parse_args()
     from kitti_eval.pose_evaluation_utils import test_framework_KITTI as test_framework
+    #net init
+    weights = torch.load(args.pretrained_posenet)#权重参数载入,return orderedDict
 
-    weights = torch.load(args.pretrained_posenet)
     seq_length = int(weights['state_dict']['conv1.0.weight'].size(1)/3)
+    #conv1.0.weight .shape = (16,15,7,7),这里注意哈， 网络结构定义的是
+    #in_planse = 15, out_plans = 16, kernel_size =7,7
+    #但是这里dict存储的时候就是反的？？？与conv定义前两个是颠倒的！！！
+
+    #seq_lenth ==5由于模型如此
     pose_net = PoseExpNet(nb_ref_imgs=seq_length - 1, output_exp=False).to(device)
-    pose_net.load_state_dict(weights['state_dict'], strict=False)
+    pose_net.load_state_dict(weights['state_dict'], strict=False)#载入模型参数
 
     dataset_dir = Path(args.dataset_dir)
     framework = test_framework(dataset_dir, args.sequences, seq_length)
@@ -50,15 +56,17 @@ def main():
         output_dir = Path(args.output_dir)
         output_dir.makedirs_p()
         predictions_array = np.zeros((len(framework), seq_length, 3, 4))
-
-    for j, sample in enumerate(tqdm(framework)):
-        imgs = sample['imgs']
+# main cycle
+    for j, sample in enumerate(tqdm(framework)) :#j from 0~1591#tqdm(obj)调用__iter__
+        if j>100:
+            break;
+        imgs = sample['imgs']#[375,1242,3]
 
         h,w,_ = imgs[0].shape
         if (not args.no_resize) and (h != args.img_height or w != args.img_width):
-            imgs = [imresize(img, (args.img_height, args.img_width)).astype(np.float32) for img in imgs]
+            imgs = [imresize(img, (args.img_height, args.img_width)).astype(np.float32) for img in imgs] #[128,416,3]
 
-        imgs = [np.transpose(img, (2,0,1)) for img in imgs]
+        imgs = [np.transpose(img, (2,0,1)) for img in imgs]#[3,128,416],201 通道提前
 
         ref_imgs = []
         for i, img in enumerate(imgs):
@@ -68,13 +76,19 @@ def main():
                 tgt_img = img
             else:
                 ref_imgs.append(img)
+    #pose predict
+        #tgt_img size [1,3,h,w]
+        #ref :list of [1,3,h,w], lenth 5
+        _, poses = pose_net(tgt_img, ref_imgs)#return exp_mask,pose，#
+        # 这里的1是因为在训练的时候需要batch_size输入，但其他时候不需要
+        #pose tensorsize =( 1,num_ref_imgs(4),6)
 
-        _, poses = pose_net(tgt_img, ref_imgs)
-
-        poses = poses.cpu()[0]
-        poses = torch.cat([poses[:len(imgs)//2], torch.zeros(1,6).float(), poses[len(imgs)//2:]])
+        poses = poses.cpu()[0]#(4,6)
+        poses = torch.cat([poses[:len(imgs)//2], torch.zeros(1,6).float(), poses[len(imgs)//2:]])#中间插入全0， 代表关键帧
+        #相对于自己自运动为0,[5,6]
 
         inv_transform_matrices = pose_vec2mat(poses, rotation_mode=args.rotation_mode).numpy().astype(np.float64)
+        #shape = 5,3,4
 
         rot_matrices = np.linalg.inv(inv_transform_matrices[:,:,:3])
         tr_vectors = -rot_matrices @ inv_transform_matrices[:,:,-1:]
@@ -83,9 +97,11 @@ def main():
 
         first_inv_transform = inv_transform_matrices[0]
         final_poses = first_inv_transform[:,:3] @ transform_matrices
-        final_poses[:,:,-1:] += first_inv_transform[:,-1:]
+        final_poses[:,:,-1:] += first_inv_transform[:,-1:]#5,3,4
 
-        if args.output_dir is not None:
+
+
+        if args.output_dir is not None:#forwad pass 结果记录一下,留着输出
             predictions_array[j] = final_poses
 
         ATE, RE = compute_pose_error(sample['poses'], final_poses)
@@ -121,6 +137,22 @@ def compute_pose_error(gt, pred):
 
     return ATE/snippet_length, RE/snippet_length
 
+def npy2pics():
+#restore
+    import skimage
+    import matplotlib.pyplot as plt
+    import os
+    dirpath = 'test_pose_out'
+    disp = np.load('test_pose_out/predictions.npy')  # Or disparities.npy for output without post-processing
+    disp.shape#(nums_of_pic,256,512)
+
+    #save all test img
+    for i in range(disp.shape[0]):#(nums_of_pic,height,wight)
+        disp_to_img = skimage.transform.resize(disp[i].squeeze(), [128, 416], mode='constant')#kitti: 375,1242 VisDrone: 540,960
+        plt.imsave(os.path.join(dirpath,
+                   'pred_'+str(i)+'.png'), disp_to_img, cmap='plasma')
+    print('finished change')
 
 if __name__ == '__main__':
     main()
+    npy2pics()

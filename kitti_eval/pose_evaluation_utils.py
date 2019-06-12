@@ -13,6 +13,13 @@ class test_framework_KITTI(object):
         self.img_files, self.poses, self.sample_indices = read_scene_data(self.root, sequence_set, seq_length, step)
 
     def generator(self):
+        """
+            它是在for循环的过程中不断计算出下一个元素，并在适当的条件结束for循环
+            跟常规的遍历相比，需要一次性全部载入内存，按个取出，这样非常费空间
+
+
+        :return:
+        """
         for img_list, pose_list, sample_list in zip(self.img_files, self.poses, self.sample_indices):
             for snippet_indices in sample_list:
                 imgs = [imread(img_list[i]).astype(np.float32) for i in snippet_indices]
@@ -26,6 +33,9 @@ class test_framework_KITTI(object):
                        'path': img_list[0],
                        'poses': compensated_poses
                        }
+
+
+
 
     def __iter__(self):
         return self.generator()
@@ -58,3 +68,4 @@ def read_scene_data(data_root, sequence_set, seq_length=3, step=1):
         poses_sequences.append(poses)
         indices_sequences.append(snippet_indices)
     return im_sequences, poses_sequences, indices_sequences
+

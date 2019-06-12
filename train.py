@@ -31,7 +31,7 @@ parser.add_argument("--data",help='path to original dataset',default='processed_
 parser.add_argument('--dataset-format', default='sequential', metavar='STR',
                     help='dataset format, stacked: stacked frames (from original TensorFlow code) \
                     sequential: sequential folders (easier to convert to with a non KITTI/Cityscape dataset')#训练集形式
-parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=5)#自己加上前一张，后一张，一共三张
+parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=3)#自己加上前一张，后一张，一共三张
 parser.add_argument('--rotation-mode', type=str, choices=['euler', 'quat'], default='euler',
                     help='rotation mode for PoseExpnet : euler (yaw,pitch,roll) or quaternion (last 3 coefficients)')
 parser.add_argument('--padding-mode', type=str, choices=['zeros', 'border'], default='zeros',
@@ -94,25 +94,27 @@ def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, log
 
     end = time.time()
     logger.train_bar.update(0)
+#train main cycle
     for i, (tgt_img, ref_imgs, intrinsics, intrinsics_inv) in enumerate(train_loader):
     #for (i, data) in enumerate(train_loader):#data(list): [tensor(B,3,H,W),list(B),(B,H,W),(b,h,w)]
         log_losses = i > 0 and n_iter % args.print_freq == 0
         log_output = args.training_output_freq > 0 and n_iter % args.training_output_freq == 0
 
-        # measure data loading time
+        #1 measure data loading time
         data_time.update(time.time() - end)
         tgt_img = tgt_img.to(device)#(4,3,128,416)
         ref_imgs = [img.to(device) for img in ref_imgs]#batch size张图片的前一帧和后一帧
         intrinsics = intrinsics.to(device)#(4,3,3)
         """forward and loss"""
-        # compute output
+        #2 compute output
         disparities = disp_net(tgt_img)# lenth batch-size list of tensor(4,1,128,416) ,(4,1,64,208),(4,1,32,104),(4,1,16,52)]
 
         explainability_mask, pose = pose_exp_net(tgt_img, ref_imgs)#pose tensor(bs,sq-lenth-1,6), relative camera pose
-        #print(type(explainability_mask))
+
+
         depth = [1 / disp for disp in disparities]#depth = fxT/(d) 成反比关系，简单取倒数
 
-        #loss compute
+        #3 loss compute
         loss_1, warped, diff = photometric_reconstruction_loss(tgt_img, ref_imgs, intrinsics,
                                                                depth, explainability_mask, pose,
                                                                args.rotation_mode, args.padding_mode)
@@ -370,13 +372,16 @@ def main():
 
 # create model
     print("=> creating model")
-
+    #disp
     disp_net = models.DispNetS().to(device)
     output_exp = args.mask_loss_weight > 0
     if not output_exp:
         print("=> no mask loss, PoseExpnet will only output pose")
+    #pose
     pose_exp_net = models.PoseExpNet(nb_ref_imgs=args.sequence_length - 1, output_exp=args.mask_loss_weight > 0).to(device)
 
+
+    #init posenet
     if args.pretrained_exp_pose:
         print("=> using pre-trained weights for explainabilty and pose net")
         weights = torch.load(args.pretrained_exp_pose)
@@ -384,6 +389,8 @@ def main():
     else:
         pose_exp_net.init_weights()
 
+
+    #init dispNet
     if args.pretrained_disp:
         print("=> using pre-trained weights for Dispnet")
         weights = torch.load(args.pretrained_disp)
@@ -396,7 +403,7 @@ def main():
     pose_exp_net = torch.nn.DataParallel(pose_exp_net)
 
     print('=> setting adam solver')
-
+    #可以看到两个一起训练
     optim_params = [
         {'params': disp_net.parameters(), 'lr': args.lr},
         {'params': pose_exp_net.parameters(), 'lr': args.lr}

@@ -60,8 +60,10 @@ class PoseExpNet(nn.Module):
     def forward(self, target_image, ref_imgs):
         assert(len(ref_imgs) == self.nb_ref_imgs)
         input = [target_image]
-        input.extend(ref_imgs)
-        input = torch.cat(input, 1)#bs,(sql-1)x3,h,w :(7,33,128,416) (7,27,128,416)
+        input.extend(ref_imgs)#,b,sql,h,w# test: list of sql,[1,3,128,416]
+
+        #list2tensor
+        input = torch.cat(input, 1)#bs,(sql-1)x3,h,w :(7,33,128,416) (7,27,128,416) #tensor
         out_conv1 = self.conv1(input)#bs,32,h/2,w/2 :(7,16,64,208)
         out_conv2 = self.conv2(out_conv1)#7,32,32,104
         out_conv3 = self.conv3(out_conv2)#7,64,16,52
