@@ -5,34 +5,57 @@ import scipy.misc
 from collections import Counter
 
 
-def rotx(t):
-    """Rotation about the x-axis."""
-    c = np.cos(t)
-    s = np.sin(t)
-    return np.array([[1,  0,  0],
-                     [0,  c, -s],
-                     [0,  s,  c]])
+def read_calib_file(path):
+    # taken from https://github.com/hunse/kitti
+    float_chars = set("0123456789.e+- ")
+    data = {}
+    with open(path, 'r') as f:
+        for line in f.readlines():
+            key, value = line.split(':', 1)
+            value = value.strip()
+            data[key] = value
+            if float_chars.issuperset(value):
+                # try to cast to float array
+                try:
+                    data[key] = np.array(list(map(float, value.split(' '))))
+                except ValueError:
+                    # casting error: data[key] already eq. value, so pass
+                    pass
 
-
-def roty(t):
-    """Rotation about the y-axis."""
-    c = np.cos(t)
-    s = np.sin(t)
-    return np.array([[c,  0,  s],
-                     [0,  1,  0],
-                     [-s, 0,  c]])
-
-
-def rotz(t):
-    """Rotation about the z-axis."""
-    c = np.cos(t)
-    s = np.sin(t)
-    return np.array([[c, -s,  0],
-                     [s,  c,  0],
-                     [0,  0,  1]])
-
+    return data
+def transform_from_rot_trans(R, t):
+    """Transforation matrix from rotation matrix and translation vector."""
+    R = R.reshape(3, 3)
+    t = t.reshape(3, 1)
+    return np.vstack((np.hstack([R, t]), [0, 0, 0, 1]))
 
 def pose_from_oxts_packet(metadata, scale):
+    def rotx(t):
+        """Rotation about the x-axis."""
+        c = np.cos(t)
+        s = np.sin(t)
+        return np.array([[1, 0, 0],
+                         [0, c, -s],
+                         [0, s, c]])
+
+    def roty(t):
+        """Rotation about the y-axis."""
+        c = np.cos(t)
+        s = np.sin(t)
+        return np.array([[c, 0, s],
+                         [0, 1, 0],
+                         [-s, 0, c]])
+
+    def rotz(t):
+        """Rotation about the z-axis."""
+        c = np.cos(t)
+        s = np.sin(t)
+        return np.array([[c, -s, 0],
+                         [s, c, 0],
+                         [0, 0, 1]])
+    
+
+
 
     lat, lon, alt, roll, pitch, yaw = metadata
     """Helper method to compute a SE(3) pose matrix from an OXTS packet.
@@ -57,31 +80,6 @@ def pose_from_oxts_packet(metadata, scale):
     return transform_from_rot_trans(R, t)
 
 
-def read_calib_file(path):
-    # taken from https://github.com/hunse/kitti
-    float_chars = set("0123456789.e+- ")
-    data = {}
-    with open(path, 'r') as f:
-        for line in f.readlines():
-            key, value = line.split(':', 1)
-            value = value.strip()
-            data[key] = value
-            if float_chars.issuperset(value):
-                # try to cast to float array
-                try:
-                    data[key] = np.array(list(map(float, value.split(' '))))
-                except ValueError:
-                    # casting error: data[key] already eq. value, so pass
-                    pass
-
-    return data
-
-
-def transform_from_rot_trans(R, t):
-    """Transforation matrix from rotation matrix and translation vector."""
-    R = R.reshape(3, 3)
-    t = t.reshape(3, 1)
-    return np.vstack((np.hstack([R, t]), [0, 0, 0, 1]))
 
 
 class KittiRawLoader(object):
@@ -110,8 +108,8 @@ class KittiRawLoader(object):
         self.img_width = img_width
         self.cam_ids = ['02', '03']
 
-        self.date_list = ['2011_09_26', '2011_09_28', '2011_09_29', '2011_09_30', '2011_10_03']
-        #self.date_list = ['2011_09_26']
+        #self.date_list = ['2011_09_26', '2011_09_28', '2011_09_29', '2011_09_30', '2011_10_03']
+        self.date_list = ['2011_09_28']
 
         self.min_speed = min_speed
         self.get_depth = get_depth
@@ -140,6 +138,8 @@ class KittiRawLoader(object):
                 if dr.name[:-5] not in self.test_scenes:
                     self.scenes.append(dr)
 
+
+    #1
     def collect_scenes(self, drive):#从一个场景文件夹下面得到左右摄像机组成的list
         train_scenes = []
         for c in self.cam_ids:# 左右相机
@@ -183,7 +183,7 @@ class KittiRawLoader(object):
 
             train_scenes.append(scene_data)
         return train_scenes
-
+    #for public
     def get_scene_imgs(self, scene_data):
         def construct_sample(scene_data, i, frame_id):
             sample = {"img":self.load_image(scene_data, i)[0], "id":frame_id}
@@ -208,7 +208,7 @@ class KittiRawLoader(object):
             for (i,frame_id) in enumerate(scene_data['frame_id']):
                 if (drive not in self.static_frames.keys()) or (frame_id not in self.static_frames[drive]):
                     yield construct_sample(scene_data, i, frame_id)
-
+    # private
     def get_P_rect(self, scene_data, zoom_x, zoom_y):
         calib_file = scene_data['dir'].parent/'calib_cam_to_cam.txt'
 

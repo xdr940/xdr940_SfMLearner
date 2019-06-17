@@ -31,7 +31,7 @@ parser.add_argument("--data",help='path to original dataset',default='processed_
 parser.add_argument('--dataset-format', default='sequential', metavar='STR',
                     help='dataset format, stacked: stacked frames (from original TensorFlow code) \
                     sequential: sequential folders (easier to convert to with a non KITTI/Cityscape dataset')#训练集形式
-parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=3)#自己加上前一张，后一张，一共三张
+parser.add_argument('--sequence-length', type=int, metavar='N', help='sequence length for training', default=5)#自己加上前一张，后一张，一共三张
 parser.add_argument('--rotation-mode', type=str, choices=['euler', 'quat'], default='euler',
                     help='rotation mode for PoseExpnet : euler (yaw,pitch,roll) or quaternion (last 3 coefficients)')
 parser.add_argument('--padding-mode', type=str, choices=['zeros', 'border'], default='zeros',

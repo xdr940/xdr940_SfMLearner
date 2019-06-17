@@ -4,24 +4,25 @@ from torch import sigmoid
 from torch.nn.init import xavier_uniform_, zeros_
 
 
-def conv(in_planes, out_planes, kernel_size=3):
-    return nn.Sequential(
-        nn.Conv2d(in_planes, out_planes, kernel_size=kernel_size, padding=(kernel_size-1)//2, stride=2),
-        nn.ReLU(inplace=True)
-    )
-
-
-def upconv(in_planes, out_planes):
-    return nn.Sequential(
-        nn.ConvTranspose2d(in_planes, out_planes, kernel_size=4, stride=2, padding=1),
-        nn.ReLU(inplace=True)
-    )
 
 
 class PoseExpNet(nn.Module):
                         #sql-1
     def __init__(self, nb_ref_imgs=2, output_exp=False):
         super(PoseExpNet, self).__init__()
+
+        def conv(in_planes, out_planes, kernel_size=3):
+            return nn.Sequential(
+                nn.Conv2d(in_planes, out_planes, kernel_size=kernel_size, padding=(kernel_size - 1) // 2, stride=2),
+                nn.ReLU(inplace=True)
+            )
+
+        def upconv(in_planes, out_planes):
+            return nn.Sequential(
+                nn.ConvTranspose2d(in_planes, out_planes, kernel_size=4, stride=2, padding=1),
+                nn.ReLU(inplace=True)
+            )
+
         self.nb_ref_imgs = nb_ref_imgs
         self.output_exp = output_exp
                       # 0   1   2   3   4   5       6
@@ -99,3 +100,5 @@ class PoseExpNet(nn.Module):
             return [exp_mask1, exp_mask2, exp_mask3, exp_mask4], pose#mask:四中尺寸组成的list pose:bs,sq-lenth-1,6
         else:
             return exp_mask1, pose
+
+

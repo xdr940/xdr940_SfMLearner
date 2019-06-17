@@ -11,7 +11,7 @@ from tqdm import tqdm
 from path import Path
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--dataset_dir",help='path to original dataset',default='/home/roit/datasets/KITTI/raw_data/')
+parser.add_argument("--dataset_dir",help='path to original dataset',default='/home/roit/datasets/kitti/')
 parser.add_argument("--dataset-format", type=str, default='kitti', choices=["kitti", "cityscapes"])
 parser.add_argument("--static-frames", default=None,
                     help="list of imgs to discard for being static, if not set will discard them based on speed \
@@ -30,7 +30,7 @@ parser.add_argument("--num-threads", type=int, default=1, help="number of thread
 
 args = parser.parse_args()
 
-
+# only main use it
 def dump_example(args, scene):#scene:Path /home/roit/datasets/KITTI/raw_data/2011_09_26/2011_09_26_drive_0014_sync
     scene_list = data_loader.collect_scenes(scene)#2-lenth-list, 左右相机02,03
     for scene_data in scene_list:

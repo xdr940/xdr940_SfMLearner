@@ -4,46 +4,36 @@ import torch.nn.functional as F
 from torch.nn.init import xavier_uniform_, zeros_
 
 
-def downsample_conv(in_planes, out_planes, kernel_size=3):
-    return nn.Sequential(
-        nn.Conv2d(in_planes, out_planes, kernel_size=kernel_size, stride=2, padding=(kernel_size-1)//2),
-        nn.ReLU(inplace=True),
-        nn.Conv2d(out_planes, out_planes, kernel_size=kernel_size, padding=(kernel_size-1)//2),
-        nn.ReLU(inplace=True)
-    )
-
-
-def predict_disp(in_planes):
-    return nn.Sequential(
-        nn.Conv2d(in_planes, 1, kernel_size=3, padding=1),
-        nn.Sigmoid()
-    )
-
-
-def conv(in_planes, out_planes):
-    return nn.Sequential(
-        nn.Conv2d(in_planes, out_planes, kernel_size=3, padding=1),
-        nn.ReLU(inplace=True)
-    )
-
-
-def upconv(in_planes, out_planes):
-    return nn.Sequential(
-        nn.ConvTranspose2d(in_planes, out_planes, kernel_size=3, stride=2, padding=1, output_padding=1),
-        nn.ReLU(inplace=True)
-    )
-
-
-def crop_like(input, ref):
-    assert(input.size(2) >= ref.size(2) and input.size(3) >= ref.size(3))
-    return input[:, :, :ref.size(2), :ref.size(3)]
-
-
 class DispNetS(nn.Module):
 
     def __init__(self, alpha=10, beta=0.01):
         super(DispNetS, self).__init__()
 
+        def downsample_conv(in_planes, out_planes, kernel_size=3):
+            return nn.Sequential(
+                nn.Conv2d(in_planes, out_planes, kernel_size=kernel_size, stride=2, padding=(kernel_size - 1) // 2),
+                nn.ReLU(inplace=True),
+                nn.Conv2d(out_planes, out_planes, kernel_size=kernel_size, padding=(kernel_size - 1) // 2),
+                nn.ReLU(inplace=True)
+            )
+
+        def upconv(in_planes, out_planes):
+            return nn.Sequential(
+                nn.ConvTranspose2d(in_planes, out_planes, kernel_size=3, stride=2, padding=1, output_padding=1),
+                nn.ReLU(inplace=True)
+            )
+
+        def conv(in_planes, out_planes):
+            return nn.Sequential(
+                nn.Conv2d(in_planes, out_planes, kernel_size=3, padding=1),
+                nn.ReLU(inplace=True)
+            )
+
+        def predict_disp(in_planes):
+            return nn.Sequential(
+                nn.Conv2d(in_planes, 1, kernel_size=3, padding=1),
+                nn.Sigmoid()
+            )
         self.alpha = alpha
         self.beta = beta
 
@@ -86,6 +76,11 @@ class DispNetS(nn.Module):
                     zeros_(m.bias)
 
     def forward(self, x):
+
+        def crop_like(input, ref):
+            assert (input.size(2) >= ref.size(2) and input.size(3) >= ref.size(3))
+            return input[:, :, :ref.size(2), :ref.size(3)]
+
         out_conv1 = self.conv1(x)
         out_conv2 = self.conv2(out_conv1)
         out_conv3 = self.conv3(out_conv2)

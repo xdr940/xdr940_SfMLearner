@@ -3,7 +3,9 @@ import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 pixel_coords = None
-
+'''
+    大部分是opencv 包含的一些utils
+'''
 
 def set_id_grid(depth):
     global pixel_coords
