@@ -16,6 +16,10 @@ from loss_functions import photometric_reconstruction_loss, explainability_loss,
 from logger import TermLogger, AverageMeter
 from tensorboardX import SummaryWriter
 import matplotlib.pyplot as plt
+
+
+
+
 parser = argparse.ArgumentParser(description='Structure from Motion Learner training on KITTI and CityScapes Dataset',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
@@ -42,11 +46,11 @@ parser.add_argument('--with-gt', action='store_true', help='use ground truth for
                     You need to store it in npy 2D arrays see data/kitti_raw_loader.py for an example')
 parser.add_argument('-j', '--workers', default=5, type=int, metavar='N',
                     help='number of data loading workers')
-parser.add_argument('--epochs', default=20, type=int, metavar='N',
+parser.add_argument('--epochs', default=8, type=int, metavar='N',
                     help='number of total epochs to run')
-parser.add_argument('--epoch-size', default=10, type=int, metavar='N',
-                    help='manual epoch size (will match dataset size if not set)')
-parser.add_argument('-b', '--batch-size', default=7, type=int,
+parser.add_argument('--epoch-size', default=0, type=int, metavar='N',
+                    help='manual epoch size (will match dataset size if not set, if 0, will be len(dataloader))')
+parser.add_argument('-b', '--batch-size', default=5, type=int,
                     metavar='N', help='mini-batch size')
 parser.add_argument('--lr', '--learning-rate', default=2e-4, type=float,
                     metavar='LR', help='initial learning rate')
@@ -56,7 +60,7 @@ parser.add_argument('--beta', default=0.999, type=float, metavar='M',
                     help='beta parameters for adam')
 parser.add_argument('--weight-decay', '--wd', default=0, type=float,
                     metavar='W', help='weight decay')
-parser.add_argument('--print-freq', default=10, type=int,
+parser.add_argument('--print-freq', default=2, type=int,
                     metavar='N', help='print frequency')
 parser.add_argument('-e', '--evaluate', dest='evaluate', action='store_true',
                     help='evaluate model on validation set')
@@ -126,15 +130,17 @@ def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, log
         loss_3 = smooth_loss(depth)
 
         loss = w1*loss_1 + w2*loss_2 + w3*loss_3
-        
+
+
+    #4. 数据记录 tensorboard batch-record data, 而且不用初始化数据名称(自动初始化)，直接往里面加
         if log_losses:
             train_writer.add_scalar('photometric_error', loss_1.item(), n_iter)
             if w2 > 0:
-                train_writer.add_scalar('explanability_loss', loss_2.item(), n_iter)
+                train_writer.add_scalar('explanabilityyyyyy_loss', loss_2.item(), n_iter)
             train_writer.add_scalar('disparity_smoothness_loss', loss_3.item(), n_iter)
             train_writer.add_scalar('total_loss', loss.item(), n_iter)
 
-        if log_output:
+        if log_output:#数据弄到tensorboard可读文件里去， 名字就是events开头(defaulted)
             train_writer.add_image('train Input', tensor2array(tgt_img[0]), n_iter)
             for k, scaled_maps in enumerate(zip(depth, disparities, warped, diff, explainability_mask)):
                 log_output_tensorboard(train_writer, "train", k, n_iter, *scaled_maps)
@@ -150,11 +156,12 @@ def train(args, train_loader, disp_net, pose_exp_net, optimizer, epoch_size, log
         # measure elapsed time
         batch_time.update(time.time() - end)
         end = time.time()
-
+        #csv record
         with open(args.save_path/args.log_full, 'a') as csvfile:
             writer = csv.writer(csvfile, delimiter='\t')
             writer.writerow([loss.item(), loss_1.item(), loss_2.item() if w2 > 0 else 0, loss_3.item()])
         logger.train_bar.update(i+1)
+
         if i % args.print_freq == 0:
             logger.train_writer.write('Train: Time {} Data {} Loss {}'.format(batch_time, data_time, losses))
         if i >= epoch_size - 1:
@@ -187,7 +194,7 @@ def validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger,
         intrinsics = intrinsics.to(device)
         #intrinsics_inv = intrinsics_inv.to(device)
 
-        # compute output
+        # compute  losses
         disp = disp_net(tgt_img)
         depth = 1/disp
         explainability_mask, pose = pose_exp_net(tgt_img, ref_imgs)#pose: (batch-size, squ-length-a ,6)
@@ -203,6 +210,11 @@ def validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger,
             loss_2 = 0
         loss_3 = smooth_loss(depth).item()
 
+        loss = w1*loss_1 + w2*loss_2 + w3*loss_3
+        losses.update([loss, loss_1, loss_2])
+
+
+        #record
         if log_outputs and i < len(output_writers):  # log first output of first batches
             if epoch == 0:
                 for j,ref in enumerate(ref_imgs):
@@ -220,8 +232,6 @@ def validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger,
                                                             disp_unraveled.median(-1)[0],
                                                             disp_unraveled.max(-1)[0]]).numpy()
 
-        loss = w1*loss_1 + w2*loss_2 + w3*loss_3
-        losses.update([loss, loss_1, loss_2])
 
         # measure elapsed time
         batch_time.update(time.time() - end)
@@ -229,6 +239,8 @@ def validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger,
         logger.valid_bar.update(i+1)
         if i % args.print_freq == 0:
             logger.valid_writer.write('valid: Time {} Loss {}'.format(batch_time, losses))
+
+
     if log_outputs:
         prefix = 'valid poses'
         coeffs_names = ['tx', 'ty', 'tz']
@@ -240,7 +252,8 @@ def validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger,
             output_writers[0].add_histogram('{} {}'.format(prefix, coeffs_names[i]), poses[:,i], epoch)
         output_writers[0].add_histogram('disp_values', disp_values, epoch)
     logger.valid_bar.update(len(val_loader))
-    return losses.avg, ['Total loss', 'Photo loss', 'Exp loss']
+    return losses.avg, ['Total loss', 'Photo loss', 'Exp loss']#without gt, 则评估指标用自己定义的loss-fuc， 如果with gt
+    #则如下用推荐的七个指标
 
 
 @torch.no_grad()
@@ -306,13 +319,14 @@ def main():
     save_path = save_path_formatter(args, parser)
     args.save_path = 'checkpoints'/save_path
     print('=> will save everything to {}'.format(args.save_path))
-    args.save_path.makedirs_p()
+    args.save_path.makedirs_p()#如果没有，则建立，有则啥都不干 in Path.py小工具
     torch.manual_seed(args.seed)
     if args.evaluate:
         args.epochs = 0
+#tensorboard SummaryWriter
+    training_writer = SummaryWriter(args.save_path)#for tensorboard
 
-    training_writer = SummaryWriter(args.save_path)
-    output_writers = []
+    output_writers = []#list
     if args.log_output:
         for i in range(3):
             output_writers.append(SummaryWriter(args.save_path/'valid'/str(i)))
@@ -391,6 +405,8 @@ def main():
 
 
     #init dispNet
+
+
     if args.pretrained_disp:
         print("=> using pre-trained weights for Dispnet")
         weights = torch.load(args.pretrained_disp)
@@ -411,7 +427,7 @@ def main():
     optimizer = torch.optim.Adam(optim_params,
                                  betas=(args.momentum, args.beta),
                                  weight_decay=args.weight_decay)
-
+    #训练结果写入csv
     with open(args.save_path/args.log_summary, 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
         writer.writerow(['train_loss', 'validation_loss'])
@@ -419,12 +435,10 @@ def main():
     with open(args.save_path/args.log_full, 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
         writer.writerow(['train_loss', 'photo_loss', 'explainability_loss', 'smooth_loss'])
+
     n_epochs=args.epochs
     train_size = min(len(train_loader), args.epoch_size)
     valid_size = len(val_loader)
-    #print(n_epochs,train_size,valid_size)
-    #print(type(n_epochs),type(train_size),type(valid_size))
-
     logger = TermLogger(n_epochs=args.epochs, train_size=min(len(train_loader), args.epoch_size), valid_size=len(val_loader))
     logger.epoch_bar.start()
 
@@ -434,7 +448,8 @@ def main():
             errors, error_names = validate_with_gt(args, val_loader, disp_net, 0, logger, output_writers)
         else:
             errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, 0, logger, output_writers)
-        for error, name in zip(errors, error_names):
+
+        for error, name in zip(errors, error_names):#validation时，对['Total loss', 'Photo loss', 'Exp loss']三个 epoch-record 指标添加记录值
             training_writer.add_scalar(name, error, 0)
         error_string = ', '.join('{} : {:.3f}'.format(name, error) for name, error in zip(error_names[2:9], errors[2:9]))
         logger.valid_writer.write(' * Avg {}'.format(error_string))
@@ -442,14 +457,17 @@ def main():
     for epoch in range(args.epochs):
         logger.epoch_bar.update(epoch)
 
-        #1. train for one epoch
         logger.reset_train_bar()
+    #1. train for one epoch
         train_loss = train(args, train_loader, disp_net, pose_exp_net, optimizer, args.epoch_size, logger, training_writer)
+        #其他参数都好解释， logger: SelfDefined class,
+
         logger.train_writer.write(' * Avg Loss : {:.3f}'.format(train_loss))
 
-        #2. evaluate on validation set
         logger.reset_valid_bar()
-        if args.with_gt:
+
+    # 2. validate on validation set
+        if args.with_gt:#<class 'list'>: ['Total loss', 'Photo loss', 'Exp loss']
             errors, error_names = validate_with_gt(args, val_loader, disp_net, epoch, logger, output_writers)
         else:
             errors, error_names = validate_without_gt(args, val_loader, disp_net, pose_exp_net, epoch, logger, output_writers)
@@ -458,7 +476,7 @@ def main():
         logger.valid_writer.write(' * Avg {}'.format(error_string))
 
         for error, name in zip(errors, error_names):
-            training_writer.add_scalar(name, error, epoch)
+            training_writer.add_scalar(name, error, epoch)#损失函数中记录epoch-record指标
 
         # Up to you to chose the most relevant error to measure
         # your model's performance, careful some measures are to maximize (such as a1,a2,a3)
@@ -471,7 +489,7 @@ def main():
         best_error = min(best_error, decisive_error)
 
 
-
+    #模型保存
         save_checkpoint(
             args.save_path, {
                 'epoch': epoch + 1,
@@ -482,9 +500,10 @@ def main():
             },
             is_best)
 
-        with open(args.save_path/args.log_summary, 'a') as csvfile:
+        with open(args.save_path/args.log_summary, 'a') as csvfile:#每个epoch留下结果
             writer = csv.writer(csvfile, delimiter='\t')
-            writer.writerow([train_loss, decisive_error])
+            writer.writerow([train_loss, decisive_error])#第二个就是validataion 中的epoch-record
+                            # loss<class 'list'>: ['Total loss', 'Photo loss', 'Exp loss']
     logger.epoch_bar.finish()
 
 

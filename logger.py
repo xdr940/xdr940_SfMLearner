@@ -3,6 +3,31 @@ import progressbar
 import sys
 
 
+"private class"
+class Writer(object):
+    """Create an object with a write method that writes to a
+    specific place on the screen, defined at instantiation.
+
+    This is the glue between blessings and progressbar.
+    """
+
+    def __init__(self, t, location):
+        """
+        Input: location - tuple of ints (x, y), the position
+                        of the bar in the terminal
+        """
+        self.location = location
+        self.t = t
+
+    def write(self, string):
+        with self.t.location(*self.location):
+            sys.stdout.write("\033[K")
+            print(string)
+
+    def flush(self):
+        return
+
+
 class TermLogger(object):
     def __init__(self, n_epochs, train_size, valid_size):
         self.n_epochs = n_epochs
@@ -34,31 +59,6 @@ class TermLogger(object):
 
     def reset_valid_bar(self):
         self.valid_bar = progressbar.ProgressBar(max_value=self.valid_size, fd=self.valid_bar_writer)
-
-
-class Writer(object):
-    """Create an object with a write method that writes to a
-    specific place on the screen, defined at instantiation.
-
-    This is the glue between blessings and progressbar.
-    """
-
-    def __init__(self, t, location):
-        """
-        Input: location - tuple of ints (x, y), the position
-                        of the bar in the terminal
-        """
-        self.location = location
-        self.t = t
-
-    def write(self, string):
-        with self.t.location(*self.location):
-            sys.stdout.write("\033[K")
-            print(string)
-
-    def flush(self):
-        return
-
 
 class AverageMeter(object):
     """Computes and stores the average and current value"""

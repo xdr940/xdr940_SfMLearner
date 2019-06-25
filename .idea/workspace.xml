@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ed5aa2d4-ece0-4670-a577-7909294cff1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/kitti_raw_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/kitti_raw_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/prepare_train_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/prepare_train_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/call_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/call_tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inverse_warp.py" beforeDir="false" afterPath="$PROJECT_DIR$/inverse_warp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DispNetS.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/DispNetS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/PoseExpNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/PoseExpNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,63 +21,39 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/DispNetS.py">
+        <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="478">
+              <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#1172#5695#0" />
-                <element signature="e#981#1310#0" />
-                <element signature="e#1174#1360#0" />
-                <element signature="e#1253#1402#0" />
-                <element signature="e#1160#1291#0" />
-                <element signature="e#3231#3449#0" />
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#1419#1602#0" />
+                <element signature="e#2069#2357#0" />
+                <element signature="e#2418#2556#0" />
+                <element signature="e#8938#12601#0" />
+                <element signature="e#12709#14877#0" />
+                <element signature="e#14896#22812#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/PoseExpNet.py">
+        <entry file="file://$PROJECT_DIR$/loss_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="196">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#168#4386#0" />
-                <element signature="e#354#550#0" />
-                <element signature="e#611#785#0" />
-                <element signature="e#2347#2570#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding>
-                <element signature="e#293#1400#0" />
-                <element signature="e#1474#1949#0" />
-                <element signature="e#1993#2352#0" />
-                <element signature="e#2608#3568#0" />
-                <element signature="e#3637#4083#0" />
-                <element signature="e#4193#4576#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-              <folding>
-                <element signature="e#21#36#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#3105#3342#0" />
+                <element signature="e#3213#3326#0" />
+                <element signature="e#3376#3982#0" />
+                <element signature="e#3433#3552#0" />
+                <element signature="e#3712#3966#0" />
+                <element signature="e#4062#5437#0" />
+                <element signature="e#4147#4336#1" />
+                <element signature="e#4358#4569#0" />
+                <element signature="e#4630#5342#0" />
               </folding>
             </state>
           </provider>
@@ -87,84 +62,57 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inverse_warp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="308">
+              <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#159#534#0" />
-                <element signature="e#587#888#0" />
-                <element signature="e#684#759#0" />
-                <element signature="e#943#2312#0" />
-                <element signature="e#1019#1295#1" />
-                <element signature="e#1431#1460#0" />
-                <element signature="e#1695#1742#0" />
-                <element signature="e#1851#2211#1" />
-                <element signature="e#2387#4209#0" />
-                <element signature="e#2387#2776#1" />
-                <element signature="e#2817#3302#1" />
-                <element signature="e#3713#3906#1" />
-                <element signature="e#4238#5354#0" />
-                <element signature="e#4238#4553#1" />
-                <element signature="e#4751#4860#0" />
-                <element signature="e#4959#5069#0" />
-                <element signature="e#5168#5278#0" />
-                <element signature="e#5381#6280#0" />
-                <element signature="e#5381#5663#1" />
-                <element signature="e#6050#6237#0" />
-                <element signature="e#6333#6895#0" />
-                <element signature="e#6333#6546#1" />
-                <element signature="e#6995#8735#0" />
-                <element signature="e#6995#7564#1" />
-                <element signature="e#8363#8373#0" />
-                <element signature="e#8615#8659#0" />
+                <element signature="e#129#162#1" />
+                <element signature="e#620#921#0" />
+                <element signature="e#717#792#0" />
+                <element signature="e#2420#2809#1" />
+                <element signature="e#2850#3335#1" />
+                <element signature="e#4271#5387#0" />
+                <element signature="e#4271#4586#1" />
+                <element signature="e#4784#4893#0" />
+                <element signature="e#4992#5102#0" />
+                <element signature="e#5201#5311#0" />
+                <element signature="e#5414#6313#0" />
+                <element signature="e#5414#5696#1" />
+                <element signature="e#6083#6270#0" />
+                <element signature="e#6366#6928#0" />
+                <element signature="e#6366#6579#1" />
+                <element signature="e#7028#7597#1" />
+                <element signature="e#8648#8692#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.py">
+        <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="474" column="23" selection-start-line="474" selection-start-column="8" selection-end-line="474" selection-end-column="23" />
+            <state relative-caret-position="66">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
-                <element signature="e#1419#1602#0" />
-                <element signature="e#2069#2357#0" />
-                <element signature="e#2418#2556#0" />
-                <element signature="e#5282#8650#0" />
-                <element signature="e#5731#8624#0" />
-                <element signature="e#7197#7531#0" />
-                <element signature="e#7568#7831#0" />
-                <element signature="e#8220#8369#0" />
-                <element signature="e#8775#12357#0" />
-                <element signature="e#9380#11747#0" />
-                <element signature="e#9544#9587#0" />
-                <element signature="e#10432#10821#0" />
-                <element signature="e#10463#10698#0" />
-                <element signature="e#10517#10698#0" />
-                <element signature="e#10885#11383#0" />
-                <element signature="e#11170#11374#0" />
-                <element signature="e#11776#12248#0" />
-                <element signature="e#12465#14633#0" />
-                <element signature="e#12836#14553#0" />
-                <element signature="e#13071#14185#0" />
-                <element signature="e#13102#13768#0" />
-                <element signature="e#15315#15413#0" />
-                <element signature="e#15613#15776#0" />
-                <element signature="e#16176#16227#0" />
-                <element signature="e#16334#16491#0" />
-                <element signature="e#16510#16710#0" />
-                <element signature="e#17892#18089#0" />
-                <element signature="e#18193#18349#0" />
-                <element signature="e#18594#18720#0" />
-                <element signature="e#18973#19076#0" />
-                <element signature="e#19147#19283#0" />
-                <element signature="e#19403#19441#0" />
-                <element signature="e#19714#20304#0" />
-                <element signature="e#21312#21367#0" />
-                <element signature="e#21774#21884#0" />
-                <element signature="e#21886#22000#0" />
-                <element signature="e#22104#22206#0" />
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#1474#1949#0" />
+                <element signature="e#1993#2352#0" />
+                <element signature="e#2608#3568#0" />
+                <element signature="e#3637#4083#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="90" selection-start-line="61" selection-end-line="90" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#105#690#0" />
+                <element signature="e#723#1820#0" />
+                <element signature="e#1854#2699#0" />
               </folding>
             </state>
           </provider>
@@ -172,29 +120,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>train_lo</find>
-      <find>collate_fn</find>
-      <find>_worker_loop</find>
-      <find>workers</find>
-      <find>poses</find>
-      <find>sample</find>
-      <find>optimi</find>
-      <find>5</find>
-      <find>pos</find>
-      <find>posene</find>
-      <find>worker</find>
-      <find>train</find>
-      <find>pose</find>
-      <find>fra</find>
-      <find>DispNet</find>
-      <find>conv</find>
-      <find>crop_like</find>
-      <find>check</find>
-      <find>roty</find>
-      <find>pose_from_oxts_packet</find>
-      <find>KittiRawLoader</find>
       <find>load_image</find>
       <find>save_checkpoint</find>
       <find>predict_disp</find>
@@ -204,6 +138,27 @@
       <find>collect_scenes</find>
       <find>read_calib_file</find>
       <find>kitti_raw</find>
+      <find>with open</find>
+      <find>is_best</find>
+      <find>add_scalar</find>
+      <find>tensorbo</find>
+      <find>SummaryWriter</find>
+      <find>training_wr</find>
+      <find>Summ</find>
+      <find>Summary</find>
+      <find>training_writer</find>
+      <find>output_writers</find>
+      <find>explanabilityyyyyy_loss</find>
+      <find>train_writer</find>
+      <find>valida</find>
+      <find>summ</find>
+      <find>summa</find>
+      <find>worker</find>
+      <find>batch_size</find>
+      <find>args</find>
+      <find>epo</find>
+      <find>check</find>
+      <find>epoch_size</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,20 +184,23 @@
         <option value="$PROJECT_DIR$/test_disp.py" />
         <option value="$PROJECT_DIR$/kitti_eval/pose_evaluation_utils.py" />
         <option value="$PROJECT_DIR$/test_pose.py" />
-        <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/models/PoseExpNet.py" />
         <option value="$PROJECT_DIR$/models/DispNetS.py" />
         <option value="$PROJECT_DIR$/data/prepare_train_data.py" />
         <option value="$PROJECT_DIR$/data/kitti_raw_loader.py" />
+        <option value="$PROJECT_DIR$/logger.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/rem.py" />
+        <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/inverse_warp.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="1843" />
-    <option name="height" value="1053" />
+    <option name="x" value="668" />
+    <option name="y" value="117" />
+    <option name="width" value="1152" />
+    <option name="height" value="883" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -259,12 +217,13 @@
             <path>
               <item name="SfMLearner_pt" type="b2602c69:ProjectViewProjectNode" />
               <item name="SfMLearner_pt" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="checkpoints" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SfMLearner_pt" type="b2602c69:ProjectViewProjectNode" />
               <item name="SfMLearner_pt" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="checkpoints" type="462c0819:PsiDirectoryNode" />
+              <item name="processed_data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,7 +234,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pythonWS/ptlearn" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prepare_train_data">
+  <component name="RunManager" selected="Python.train">
     <configuration name="kitti_raw_loader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SfMLearner_pt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -397,8 +356,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.prepare_train_data" />
         <item itemvalue="Python.train" />
+        <item itemvalue="Python.prepare_train_data" />
         <item itemvalue="Python.kitti_raw_loader" />
         <item itemvalue="Python.test_pose" />
         <item itemvalue="Python.test_disp" />
@@ -422,6 +381,25 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3261339" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -439,10 +417,22 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="error_names" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>error_names</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>img</expression-string>
         <language-id>Python</language-id>
@@ -485,11 +475,6 @@
       </expression>
       <expression>
         <expression-string>inv_transform_matrices</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>i</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -536,13 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/autograd/grad_mode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -741,17 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#4062#5437#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/call_tree.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -760,97 +727,6 @@
         <state>
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="474" column="23" selection-start-line="474" selection-start-column="8" selection-end-line="474" selection-end-column="23" />
-          <folding>
-            <element signature="e#1419#1602#0" />
-            <element signature="e#2069#2357#0" />
-            <element signature="e#2418#2556#0" />
-            <element signature="e#5282#8650#0" />
-            <element signature="e#5731#8624#0" />
-            <element signature="e#7197#7531#0" />
-            <element signature="e#7568#7831#0" />
-            <element signature="e#8220#8369#0" />
-            <element signature="e#8775#12357#0" />
-            <element signature="e#9380#11747#0" />
-            <element signature="e#9544#9587#0" />
-            <element signature="e#10432#10821#0" />
-            <element signature="e#10463#10698#0" />
-            <element signature="e#10517#10698#0" />
-            <element signature="e#10885#11383#0" />
-            <element signature="e#11170#11374#0" />
-            <element signature="e#11776#12248#0" />
-            <element signature="e#12465#14633#0" />
-            <element signature="e#12836#14553#0" />
-            <element signature="e#13071#14185#0" />
-            <element signature="e#13102#13768#0" />
-            <element signature="e#15315#15413#0" />
-            <element signature="e#15613#15776#0" />
-            <element signature="e#16176#16227#0" />
-            <element signature="e#16334#16491#0" />
-            <element signature="e#16510#16710#0" />
-            <element signature="e#17892#18089#0" />
-            <element signature="e#18193#18349#0" />
-            <element signature="e#18594#18720#0" />
-            <element signature="e#18973#19076#0" />
-            <element signature="e#19147#19283#0" />
-            <element signature="e#19403#19441#0" />
-            <element signature="e#19714#20304#0" />
-            <element signature="e#21312#21367#0" />
-            <element signature="e#21774#21884#0" />
-            <element signature="e#21886#22000#0" />
-            <element signature="e#22104#22206#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/DispNetS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#1172#5695#0" />
-            <element signature="e#981#1310#0" />
-            <element signature="e#1174#1360#0" />
-            <element signature="e#1253#1402#0" />
-            <element signature="e#1160#1291#0" />
-            <element signature="e#3231#3449#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/PoseExpNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#168#4386#0" />
-            <element signature="e#354#550#0" />
-            <element signature="e#611#785#0" />
-            <element signature="e#2347#2570#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#293#1400#0" />
-            <element signature="e#1474#1949#0" />
-            <element signature="e#1993#2352#0" />
-            <element signature="e#2608#3568#0" />
-            <element signature="e#3637#4083#0" />
-            <element signature="e#4193#4576#0" />
           </folding>
         </state>
       </provider>
@@ -865,9 +741,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/checkpoints/processed_data/06-19-10:02/progress_log_summary.csv" />
+    <entry file="file://$PROJECT_DIR$/checkpoints/processed_data/06-19-10:02/progress_log_full.csv" />
+    <entry file="file://$PROJECT_DIR$/checkpoints/processed_data/06-19-10:20/progress_log_full.csv" />
+    <entry file="file://$PROJECT_DIR$/checkpoints/processed_data/06-19-10:20/progress_log_summary.csv" />
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/tensorboardX/writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1253">
+          <caret line="236" column="6" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkpoints/processed_data/06-19-11:23/progress_log_full.csv" />
     <entry file="file://$PROJECT_DIR$/data/prepare_train_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
+        <state relative-caret-position="830">
           <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
           <folding>
             <element signature="e#21#36#0" expanded="true" />
@@ -875,38 +763,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inverse_warp.py">
+    <entry file="file://$PROJECT_DIR$/models/PoseExpNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DispNetS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkpoints/processed_data/06-19-11:23/progress_log_summary.csv" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1419#1602#0" />
+            <element signature="e#2069#2357#0" />
+            <element signature="e#2418#2556#0" />
+            <element signature="e#8938#12601#0" />
+            <element signature="e#12709#14877#0" />
+            <element signature="e#14896#22812#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/wkpgs/Anaconda3/envs/pt/lib/python3.6/site-packages/torch/autograd/grad_mode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="90" selection-start-line="61" selection-end-line="90" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#105#690#0" />
+            <element signature="e#723#1820#0" />
+            <element signature="e#1854#2699#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#159#534#0" />
-            <element signature="e#587#888#0" />
-            <element signature="e#684#759#0" />
-            <element signature="e#943#2312#0" />
-            <element signature="e#1019#1295#1" />
-            <element signature="e#1431#1460#0" />
-            <element signature="e#1695#1742#0" />
-            <element signature="e#1851#2211#1" />
-            <element signature="e#2387#4209#0" />
-            <element signature="e#2387#2776#1" />
-            <element signature="e#2817#3302#1" />
-            <element signature="e#3713#3906#1" />
-            <element signature="e#4238#5354#0" />
-            <element signature="e#4238#4553#1" />
-            <element signature="e#4751#4860#0" />
-            <element signature="e#4959#5069#0" />
-            <element signature="e#5168#5278#0" />
-            <element signature="e#5381#6280#0" />
-            <element signature="e#5381#5663#1" />
-            <element signature="e#6050#6237#0" />
-            <element signature="e#6333#6895#0" />
-            <element signature="e#6333#6546#1" />
-            <element signature="e#6995#8735#0" />
-            <element signature="e#6995#7564#1" />
-            <element signature="e#8363#8373#0" />
-            <element signature="e#8615#8659#0" />
+            <element signature="e#1474#1949#0" />
+            <element signature="e#1993#2352#0" />
+            <element signature="e#2608#3568#0" />
+            <element signature="e#3637#4083#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#3105#3342#0" />
+            <element signature="e#3213#3326#0" />
+            <element signature="e#3376#3982#0" />
+            <element signature="e#3433#3552#0" />
+            <element signature="e#3712#3966#0" />
+            <element signature="e#4062#5437#0" />
+            <element signature="e#4147#4336#1" />
+            <element signature="e#4358#4569#0" />
+            <element signature="e#4630#5342#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inverse_warp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding>
+            <element signature="e#129#162#1" />
+            <element signature="e#620#921#0" />
+            <element signature="e#717#792#0" />
+            <element signature="e#2420#2809#1" />
+            <element signature="e#2850#3335#1" />
+            <element signature="e#4271#5387#0" />
+            <element signature="e#4271#4586#1" />
+            <element signature="e#4784#4893#0" />
+            <element signature="e#4992#5102#0" />
+            <element signature="e#5201#5311#0" />
+            <element signature="e#5414#6313#0" />
+            <element signature="e#5414#5696#1" />
+            <element signature="e#6083#6270#0" />
+            <element signature="e#6366#6928#0" />
+            <element signature="e#6366#6579#1" />
+            <element signature="e#7028#7597#1" />
+            <element signature="e#8648#8692#0" />
           </folding>
         </state>
       </provider>

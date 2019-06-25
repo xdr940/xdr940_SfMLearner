@@ -106,3 +106,8 @@ def save_checkpoint(save_path, dispnet_state, exp_pose_state, is_best, filename=
     if is_best:
         for prefix in file_prefixes:
             shutil.copyfile(save_path/'{}_{}'.format(prefix,filename), save_path/'{}_model_best.pth.tar'.format(prefix))
+
+def save_checkpoint2(save_path,net_state,is_best,filename='checkpoint.pth.tar'):
+    torch.save(net_state,save_path/'{}_{}'.format(net_state,filename))
+    if is_best:
+        shutil.copyfile(save_path/'{}_{}'.format(net_state,filename),save_path/'{}_model_best.pth.tar'.format(net_state))

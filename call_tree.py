@@ -25,5 +25,8 @@ main
 
 train# for one epoch
 	|--photometric_reconstruction_loss
+	|	|
+	|	|--inverse_warp(ref_img,depth,intrinsic,pose)
+	|
 	|--explainability_loss
 	|--smooth_loss

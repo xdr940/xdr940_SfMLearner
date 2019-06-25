@@ -15,7 +15,9 @@ def set_id_grid(depth):
     ones = torch.ones(1,h,w).type_as(depth)
 
     pixel_coords = torch.stack((j_range, i_range, ones), dim=1)  # [1, 3, H, W] 常量定义，一直不变,完全可以不定义，但是为了可读性
-
+    #其中pixel_coords[0][0][i][j]是像素(i,j)的相机坐标x分量
+    #其中pixel_coords[0][1][i][j]是像素(i,j)的相机坐标y分量
+    #其中pixel_coords[0][2][i][j]是像素(i,j)的相机坐标z分量,但是由于没有注入深度信息， 暂时全1
 
 def check_sizes(input, input_name, expected):
     condition = [input.ndimension() == len(expected)]
@@ -36,13 +38,14 @@ def pixel2cam(depth, intrinsics_inv):#像素坐标2相机坐标
     """
     b, h, w = depth.size()
     if (pixel_coords is None) or pixel_coords.size(2) < h:
-        set_id_grid(depth)#make pixel_coords
+        set_id_grid(depth)#make pixel_coords, 全局变量可改变
     #tmp1=pixel_coords[:,:,:h,:w]
     #tmp2=tmp1.expand(b,3,h,w)
     #tmp3=tmp2.reshape(b, 3, -1)#[]
     current_pixel_coords = pixel_coords[:,:,:h,:w].expand(b,3,h,w).reshape(b, 3, -1)# [B, 3, H*W]
     TMP=intrinsics_inv @ current_pixel_coords#投影矩阵逆乘,得到camcoords
-    #[B,3,3]@[B,3,H*W]=[B,3,H*W]#大概乘法逻辑懂了，但是原理逻辑不太懂
+    #[B,3,3]@[B,3,H*W]=[B,3,H*W]#大概乘法逻辑懂了，
+    #到目前为止, TMp完全没用到深度信息, 这里只是给坐标编码!
     #@符号是矩阵想成，要求两个tensor order一样，并且后两介满足惩罚要求，并且除了后两阶其余维度完全一致
     cam_coords = (TMP).reshape(b, 3, h, w)
     """
@@ -58,7 +61,9 @@ def pixel2cam(depth, intrinsics_inv):#像素坐标2相机坐标
     
     """
     #cam_coords:B,3,128,416
-    return cam_coords * depth.unsqueeze(1)#[B,3,H,W]X[B,1,H,W]=[B,3,H,W]
+    #\hat{D}_t(p_t)K^{-1}p_t
+    return  depth.unsqueeze(1)*cam_coords #[B,3,H,W]X[B,1,H,W]=[B,3,H,W],2d to 3d 再添加深度信息， 彻底变成真cam_coords
+
 
 
 def cam2pixel(cam_coords, proj_c2p_rot, proj_c2p_tr, padding_mode):
@@ -92,7 +97,7 @@ def cam2pixel(cam_coords, proj_c2p_rot, proj_c2p_tr, padding_mode):
         pcoords = cam_coords_flat
 
     if proj_c2p_tr is not None:
-        pcoords = pcoords + proj_c2p_tr  # [B, 3, H*W]
+        pcoords = pcoords + proj_c2p_tr  # [B, 3, H*W] Rp+t
     X = pcoords[:, 0]
     Y = pcoords[:, 1]
     Z = pcoords[:, 2].clamp(min=1e-3)
@@ -215,19 +220,21 @@ def inverse_warp(img, depth, pose, intrinsics, rotation_mode='euler', padding_mo
 
     batch_size, _, img_height, img_width = img.size()
 
-                            #pixel_coords也使用了(这是个常量！量等于坐标)， 通过深度图和像素坐标，得到相机坐标DIBRZ
+    #step1:#\hat{D}_t(p_t)K^{-1}p_t, pixel_coords也使用了(这是个常量！量等于坐标)， 通过深度图和像素坐标，得到相机坐标DIBRZ
     cam_coords = pixel2cam(depth, intrinsics.inverse())  # [B,3,H,W]2
 
     pose_mat = pose_vec2mat(pose, rotation_mode)  # [B,3,4]
 
     # Get projection matrix for tgt camera frame to source pixel frame
+    #论文的K\hat{T}_{t->t+1}
     proj_cam_to_src_pixel = intrinsics @ pose_mat  # [B, 3, 4]#内参x外参
 
     rot, tr = proj_cam_to_src_pixel[:,:,:3], proj_cam_to_src_pixel[:,:,-1:]#得到R,t ，这里只是为了简化，R[B,3,3], t[b,3,1]
+    #p_{t+1} = K\hat{T}_{t->t+1} \hat{D}_t(p_t)K^{-1}p_t
     src_pixel_coords = cam2pixel(cam_coords, rot, tr, padding_mode)  # [B,H,W,2]
     #这个矩阵的坐标就是
 
-                                 #[B,3,H,W]          [B,H,W,2] 图像偏移变换
+                                 #[B,3,H,W]          [B,H,W,2] 图像偏移变换,src_pixel_coords这里意义就是偏移量？
     projected_img = F.grid_sample(input=img, grid = src_pixel_coords, padding_mode=padding_mode)#[B,3,H,W]
 
     valid_points = src_pixel_coords.abs().max(dim=-1)[0] <= 1
